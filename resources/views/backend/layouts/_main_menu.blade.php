@@ -43,19 +43,27 @@
                     </li>
                 </ul>
             </li>
-{{--            <li class=" nav-item"><a href="#"><i class="bx bx-server"></i><span class="menu-title" data-i18n="Menu Levels">Service</span></a>--}}
-{{--                <ul class="menu-content">--}}
-{{--                    <li class="@yield('serviceCreate')"><a href="{{ route('service.create') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">New Service</span></a>--}}
-{{--                    </li>--}}
-{{--                    <li class="@yield('serviceList')"><a href="{{ route('service.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">All Service</span></a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
+           <li class=" nav-item"><a href="#"><i class="bx bx-server"></i><span class="menu-title" data-i18n="Menu Levels">Service</span></a>
+               <ul class="menu-content">
+                   <li class="@yield('serviceCreate')"><a href="{{ route('service.create') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">New Service</span></a>
+                   </li>
+                   <li class="@yield('serviceList')"><a href="{{ route('service.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">All Service</span></a>
+                   </li>
+               </ul>
+           </li>
             <li class=" nav-item"><a href="#"><i class="bx bx-book-bookmark"></i><span class="menu-title" data-i18n="Menu Levels">Testimonial</span></a>
                 <ul class="menu-content">
                     <li class="@yield('testimonialCreate')"><a href="{{ route('testimonial.create') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">New Testimonial</span></a>
                     </li>
                     <li class="@yield('testimonialList')"><a href="{{ route('testimonial.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">All Testimonial</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class=" nav-item"><a href="#"><i class="bx bx-book-bookmark"></i><span class="menu-title" data-i18n="Menu Levels">Sister Concern</span></a>
+                <ul class="menu-content">
+                    <li class="@yield('companyCreate')"><a href="{{ route('sister-concern.create') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">New Company</span></a>
+                    </li>
+                    <li class="@yield('companyList')"><a href="{{ route('sister-concern.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">All Company</span></a>
                     </li>
                 </ul>
             </li>
@@ -72,16 +80,16 @@
                     </li>
                 </ul>
             </li>
-            <li class=" nav-item"><a href="#"><i class="bx bx-crop"></i><span class="menu-title" data-i18n="Menu Levels">CRM</span></a>
+            {{-- <li class=" nav-item"><a href="#"><i class="bx bx-crop"></i><span class="menu-title" data-i18n="Menu Levels">CRM</span></a>
                 <ul class="menu-content">
                     <li class="@yield('crmCreate')"><a href="{{ route('crm.create') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">New CRM</span></a>
                     </li>
                     <li class="@yield('crmList')"><a href="{{ route('crm.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">All CRM</span></a>
                     </li>
                 </ul>
-            </li>
+            </li> --}}
 
-            <li class=" nav-item"><a href="#"><i class="bx bxl-blogger"></i><span class="menu-title" data-i18n="Menu Levels">Blog Post</span></a>
+            {{-- <li class=" nav-item"><a href="#"><i class="bx bxl-blogger"></i><span class="menu-title" data-i18n="Menu Levels">Blog Post</span></a>
                 <ul class="menu-content">
                     <li class="@yield('postCreate')"><a href="{{ route('post.create') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">New Blog Post</span></a>
                     </li>
@@ -92,7 +100,7 @@
                     <li class="@yield('postCategoryList')"><a href="{{ route('post-category.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">All Post Category</span></a>
                     </li>
                 </ul>
-            </li>
+            </li> --}}
             <li class=" nav-item"><a href="#"><i class="bx bx-photo-album"></i><span class="menu-title" data-i18n="Menu Levels">Gallery</span></a>
                 <ul class="menu-content">
                     <li class="@yield('galleryCreate')"><a href="{{ route('gallery.create') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">New Gallery</span></a>
