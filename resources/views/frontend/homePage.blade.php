@@ -83,11 +83,11 @@
                                             <!-- section title -->
                                             <div class="section-title">
                                                 <div class="title-header">
-                                                    <h3>TEXTILE</h3>
-                                                    <h2 class="title">One Of The Leaders in Textile <b>Market Since 2010</b></h2>
+                                                    <h3>Trusted choice</h3>
+                                                    <h2 class="title">Amazing Garment Accessories <b>We are Simply the Best </b> </h2>
                                                 </div>
                                                 <div class="title-desc">
-                                                    <p>Saimex Export have been supplying fabric material of a high standard for over 13 years. Our shop is in Dhaka, in the heart of Wiltshire is an iconic building.</p>
+                                                    <p>Explore unparalleled excellence in garment accessories with Trusted Choice. Based in Dhaka, our iconic store in the heart of Wiltshire is your premier destination for top-tier accessories, offering a wide array of choices and ensuring unmatched quality in every selection</p>
                                                 </div>
                                             </div><!-- section title end -->
                                             <div class="ttm-horizontal_sep width-100 margin_top20 margin_bottom30"></div>
