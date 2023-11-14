@@ -348,8 +348,8 @@
                 <!-- row -->
                 <div class="row">
                     <div class="col-lg-9">
-                        <h2>The Textile, Product, And Apparel Manufacturing Industries.</h2>
-                        <p>Saimex Export fabrics aims to provide the best price on authentic fabrics. Every Harris Tweed or Moon Wool order also includes original swing tags and labels. We keep always keep an eye on quality.</p>
+                        <h2>The Trusted Choice, Product, And Apparel Manufacturing Garments Industries.</h2>
+                        <p>Saimex Export trusted aims to provide the best price on authentic trusted. Every Harris Tweed or Moon Wool order also includes original swing tags and labels. We keep always keep an eye on quality.</p>
                     </div>
                     <div class="col-lg-3">
                         <div class="text-lg-right">
@@ -394,10 +394,11 @@
                                         <div class="section-title">
                                             <div class="title-header">
                                                 <h3>WHY CHOOSE US</h3>
-                                                <h2 class="title">Innovative Industry in The <b>Outdoor Since 2010 </b></h2>
+                                                <h2 class="title">Innovative Industry in The <b>Outdoor </b></h2>
                                             </div>
                                             <div class="title-desc">
-                                                <p>Adhering to the business principle of mutual benefits, we have had a good reputation among our customers because of our perfect services, quality products and competitive prices. We warmly welcome you!</p>
+                                                <p>Transform your brand effortlessly with Trusted Choice – your style upgrade for exceptional garment accessories. Dive into a world of unique designs and unmatched quality that effortlessly elevates your brand's allure. Make a statement effortlessly; choose Trusted Choice for fashion that speaks volumes.
+</p>
                                             </div>
                                         </div><!-- section title end -->
                                         <div class="row ttm-vertical_sep">
@@ -410,11 +411,11 @@
                                                         </div>
                                                     </div>
                                                     <div class="featured-title">
-                                                        <h3>An Acrylic Pulp</h3>
+                                                        <h3>Comprehensive </h3>
                                                     </div>
                                                     <div class="featured-content">
                                                         <div class="featured-desc">
-                                                            <p>Fibrillated acrylic fiber & rein forcement material.</p>
+                                                            <p>Your one-stop destination for a wide array of garment accessories.</p>
                                                         </div>
                                                     </div>
                                                 </div><!-- featured-icon-box end-->
@@ -428,11 +429,12 @@
                                                         </div>
                                                     </div>
                                                     <div class="featured-title">
-                                                        <h3>An Aramid Pulp</h3>
+                                                        <h3>Tailored Excellence</h3>
                                                     </div>
                                                     <div class="featured-content">
                                                         <div class="featured-desc">
-                                                            <p>A highly fibrillated blend of the aramid fiber and acrylic fiber</p>
+                                                            <p>Customized accessories that seamlessly integrate with your brand's identity.
+</p>
                                                         </div>
                                                     </div>
                                                 </div><!-- featured-icon-box end-->
@@ -449,11 +451,11 @@
                                                         </div>
                                                     </div>
                                                     <div class="featured-title">
-                                                        <h3>Aramid Microfiber</h3>
+                                                        <h3>Global Quality</h3>
                                                     </div>
                                                     <div class="featured-content">
                                                         <div class="featured-desc">
-                                                            <p>Micronized aramid fiber achieved by Saimex Export self-designing.</p>
+                                                            <p>Elevate your brand with our Bangladeshi artistry and international standards.</p>
                                                         </div>
                                                     </div>
                                                 </div><!-- featured-icon-box end-->
@@ -467,11 +469,12 @@
                                                         </div>
                                                     </div>
                                                     <div class="featured-title">
-                                                        <h3>Acrylic Microfiber</h3>
+                                                        <h3>Sustainable</h3>
                                                     </div>
                                                     <div class="featured-content">
                                                         <div class="featured-desc">
-                                                            <p>It can gives better toughness and polishing effect to material.</p>
+                                                            <p>On-time delivery meets eco-friendly innovations for a conscientious choice.
+</p>
                                                         </div>
                                                     </div>
                                                 </div><!-- featured-icon-box end-->
@@ -578,7 +581,7 @@
 {{--                                    <h2 class="title">Check Our <b>Pricing Plans!</b></h2>--}}
 {{--                                </div>--}}
 {{--                                <div class="title-desc">--}}
-{{--                                    <p>Saimex Export is one of the top leading textile industry. We are using the latest technologies and manufacturing process for the best fabric, still our pricing set is affordable and <b>great comparatively</b>. Check out our pricing plans for the best importation.</p>--}}
+{{--                                    <p>Saimex Export is one of the top leading Trusted Choice industry. We are using the latest technologies and manufacturing process for the best fabric, still our pricing set is affordable and <b>great comparatively</b>. Check out our pricing plans for the best importation.</p>--}}
 {{--                                </div>--}}
 {{--                            </div><!-- section title end -->--}}
 {{--                            <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-dark margin_top20 res-991-margin_top10" href="about-us.html">View ALL PLANS!</a>--}}
@@ -615,7 +618,7 @@
 {{--                        <div class="ttm-pricing-plan">--}}
 {{--                            <div class="ttm-p_table-head">--}}
 {{--                                <div class="ttm-p_table-icon ttm-textcolor-skincolor">--}}
-{{--                                    <i class="flaticon flaticon-textile-1"></i>--}}
+{{--                                    <i class="flaticon flaticon-Trusted Choice-1"></i>--}}
 {{--                                </div>--}}
 {{--                                <div class="ttm-p_table-title"><h3>Polyester Fabric</h3></div>--}}
 {{--                                <div class="ttm-p_table-desc">Salary Level UpTo $50k</div>--}}
