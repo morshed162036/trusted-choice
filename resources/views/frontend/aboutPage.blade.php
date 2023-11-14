@@ -46,13 +46,10 @@
                             <div class="section-title">
                                 <div class="title-header">
                                     <h3>WHO WE ARE</h3>
-                                    <h2 class="title">An Ultimate Textile Brand in <b>Market since 2010</b></h2>
+                                    <h2 class="title">An Ultimate Trusted Choice Brand in <b>Market  </b></h2>
                                 </div>
                                 <div class="title-desc">
-                                    <p>Indian weavers of designer of furnishing fabrics is a textile manufacturer
-                                        founded in 2010 and renowned for new and stylish interpretations of natural &
-                                        organic fabrics. All of our fabrics are designed and woven at our own weaving
-                                        mill for new and stylish interpretations of natural.</p>
+                                    <p>Welcome to Trusted Choice, where style ascends to new heights effortlessly. We're not just crafting accessories; we're sculpting statements of allure and sophistication. With Trusted Choice, your brand steps into an era where every accessory is a masterpiece, each piece an emblem of quality, innovation, and enduring style. Choose us, and let your brand's fashion journey be a tapestry of elegance. Elevate your style; choose Trusted Choice for an iconic fashion experience.</p>
                                 </div>
                             </div><!-- section title end -->
                             <div class="ttm-highlight-quote margin_top35 clearfix">
@@ -61,11 +58,11 @@
                                 <div class="d-flex align-items-center">
                                     <div class="d-inline-block">
                                         <img class="img-fluid auto_size" width="90" height="89"
-                                             src="{{ asset('frontend') }}/images/Md.Sazzad Hossain.jpg" alt="author-quote">
+                                             src="{{ asset('frontend') }}/images/trusted-choice-ceo.PNG" alt="author-quote">
                                     </div>
                                     <div class="d-inline-block padding_left30">
                                         <h2 class="fs-20 mb-0">Md. Sazzad Hossain</h2>
-                                        <label>Chairnan and founder</label>
+                                        <label>Chairman and founder</label>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +75,7 @@
 
 
         <!-- padding_zero-section -->
-        <section class="ttm-row padding_zero-section clearfix">
+        {{-- <section class="ttm-row padding_zero-section clearfix">
             <div class="container">
                 <!-- row -->
                 <div class="row">
@@ -153,7 +150,7 @@
                     </div>
                 </div><!-- row end -->
             </div>
-        </section>
+        </section> --}}
         <!-- padding_zero-section end -->
 
 
@@ -272,7 +269,7 @@
 
 
         <!--padding_zero-section -->
-        <section class="ttm-row padding_zero-section bg-img5 clearfix">
+        {{-- <section class="ttm-row padding_zero-section bg-img5 clearfix">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 ml-auto">
@@ -284,7 +281,7 @@
                             <div class="layer-content">
                                 <div class="slick_slider"
                                      data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "arrows":false, "autoplay":false, "dots":false, "infinite":true, "responsive":[{"breakpoint":992,"settings":{"slidesToShow": 1}},{"breakpoint":840,"settings":{"slidesToShow": 1}}]}'>
-                                    <!-- testimonials -->
+                                   
                                     @foreach(\App\Models\Testimonial::where('status','active')->get() as $testimonial)
                                     <div class="testimonials ttm-testimonial-box-view-style3">
                                         <div class="testimonial-content">
@@ -312,7 +309,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div><!-- testimonials end -->
+                                    </div>
                                     @endforeach
 
                                 </div>
@@ -321,27 +318,27 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!--padding_zero-section end -->
 
 
         <!--blog-section-->
-        <section class="ttm-row blog-section margin_top90 res-991-margin_top0 clearfix">
+        {{-- <section class="ttm-row blog-section margin_top90 res-991-margin_top0 clearfix">
             <div class="container">
-                <!-- row -->
+             
                 <div class="row">
                     <div class="col-lg-12">
-                        <!-- section title -->
+                        
                         <div class="section-title style2">
                             <div class="title-header">
                                 <h3>LATEST BLOGS</h3>
                                 <h2 class="title">Latest <b>News And Articles!</b></h2>
                             </div>
                             <div class="title-desc">
-                                <p>Since more than {{ date('Y')-2010 }} years, <strong>{{ $settings->app_name }}</strong> is operating in the textile market manufacture and
-                                    trader. As years go by, the range of produced textiles has been increased.</p>
+                                <p>Since more than {{ date('Y')-2010 }} years, <strong>{{ $settings->app_name }}</strong> is operating in the trusted choice market manufacture and
+                                    trader. As years go by, the range of produced trusted   has been increased.</p>
                             </div>
-                        </div><!-- section title end -->
+                        </div>
                     </div>
                 </div>
                 <div class="row slick_slider mb_15"
@@ -349,23 +346,23 @@
 
                     @foreach(\App\Models\Post::where('status','active')->limit(6)->get() as $blog)
                     <div class="col-lg-4">
-                        <!-- featured-imagebox-post -->
+                   
                         <div class="featured-imagebox featured-imagebox-post style1">
                             <div class="featured-thumbnail">
                                 <img class="img-fluid" src="{{ asset($blog->featured_photo) }}"
                                      alt="">
                             </div>
                             <div class="featured-content">
-                                <!-- ttm-box-post-date -->
+                               
                                 <div class="ttm-box-post-date">
                                     <span class="ttm-entry-date">
                                         <time class="entry-date" datetime="2021-02-15T04:15:25+00:00">15<span
                                                 class="entry-month entry-year">Feb</span></time>
                                     </span>
-                                </div><!-- ttm-box-post-date end -->
+                                </div>
                                 <div class="post-meta">
                                     <span class="ttm-meta-line byline">{{ $blog->user->name }}</span>
-                                </div><!-- post-meta end -->
+                                </div>
                                 <div class="featured-title">
                                     <h3><a href="{{ route('blogDetails',[$blog->id,$blog
 ->slug]) }}">{!! $blog->title !!}</a></h3>
@@ -377,12 +374,12 @@
 ->slug]) }}"
                                    tabindex="-1">read more</a>
                             </div>
-                        </div><!-- featured-imagebox-post end -->
+                        </div>
                     </div>
                     @endforeach
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!--blog-section end-->
 
 

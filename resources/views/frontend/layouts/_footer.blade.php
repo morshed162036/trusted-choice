@@ -8,7 +8,7 @@
                             <img id="footer-logo-img" class="img-fluid auto_size" height="46" width="170" src="{{ asset($settings->logo) }}" alt="image">
                         </div>
                         <div class="textwidget widget-text">
-                            <p>{{ $settings->app_name }} is operating in the textile market, as the manufacture and trader. As years go by the range of produced textiles products has increased.</p>
+                            <p>{{ $settings->app_name }} is operating in the trusted choice market, as the manufacture and trader. As years go by the range of produced trusted choice products has increased.</p>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 widget-area">
+            {{-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 widget-area">
                 <div class="widget newsletter_widget clearfix">
                     <form id="subscribe-form" class="newsletter-form" action="{{ route('user_subscribe.store') }}" method="POST" enctype="multipart/form-data" data-mailchimp="true">
                         @csrf
@@ -102,7 +102,7 @@
                         <div id="subscribe-msg"></div>
                     </form>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
