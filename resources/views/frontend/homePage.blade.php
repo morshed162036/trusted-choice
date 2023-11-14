@@ -105,7 +105,7 @@
                                                                 <h3>Always Genuine</h3>
                                                             </div>
                                                             <div class="featured-desc">
-                                                                <p>We guarantee you will always receive genuine fabrics material quality.</p>
+                                                                <p>We guarantee you will always receive genuine trusted choice quality.</p>
                                                             </div>
 {{--                                                            <a class="ttm-btn btn-inline ttm-btn-size-md ttm-btn-color-skincolor" href="#">read more</a>--}}
                                                         </div>
@@ -163,8 +163,8 @@
                             <!-- section title -->
                             <div class="section-title">
                                 <div class="title-header">
-                                    <h3>TEXTILE</h3>
-                                    <h2 class="title">Our Fabric Material Will <b>Build Your Trust</b></h2>
+                                    <h3>Trusted Choice</h3>
+                                    <h2 class="title">Our Trusted Choice Will <b>Build Your Trust</b></h2>
                                 </div>
                                 <div class="title-desc">
                                     <p>We’ve been established as a family furnishers business for over 60 years. With a beautiful showroom in Kolkata, out friendly staff pride themselves in providing a high level of service.</p>
@@ -181,7 +181,7 @@
                                         </div>
                                         <div class="featured-content">
                                             <div class="featured-title">
-                                                <h3>Fabric Products & Accessories</h3>
+                                                <h3>Trusted Products & Accessories</h3>
                                             </div>
                                         </div>
                                     </div><!-- featured-icon-box end-->
@@ -196,7 +196,7 @@
                                         </div>
                                         <div class="featured-content">
                                             <div class="featured-title">
-                                                <h3>Top Rayon Fabric Materials</h3>
+                                                <h3>Top Rayon Trusted Choice</h3>
                                             </div>
                                         </div>
                                     </div><!-- featured-icon-box end-->
@@ -214,7 +214,7 @@
                                         </div>
                                         <div class="featured-content">
                                             <div class="featured-desc">
-                                                <p>we’ve recently launched the ability to shop fabrics online and shop poles & tracks online from our website too</p>
+                                                <p>we’ve recently launched the ability to shop Trusted online and shop poles & tracks online from our website too</p>
                                             </div>
                                         </div>
                                     </div><!-- featured-icon-box end-->
