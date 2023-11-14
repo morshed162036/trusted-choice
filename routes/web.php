@@ -27,7 +27,8 @@ Route::get('contact-us','\App\Http\Controllers\Frontend\FrontendController@conta
 Route::post('contact-us','\App\Http\Controllers\Frontend\FrontendController@contactStore')->name('user_contact.store');
 Route::get('user-subscribe','\App\Http\Controllers\Frontend\FrontendController@contact')->name('user_contact_subscribe');
 Route::post('user-subscribe','\App\Http\Controllers\Frontend\FrontendController@subscribe')->name('user_subscribe.store');
-
+// new add
+Route::get('landing_page', '\App\Http\Controllers\Frontend\FrontendController@landingpage')->name('landing.page');
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 

@@ -155,4 +155,8 @@ class FrontendController extends Controller
         return redirect()->back()->with('success-sub','Successfully Submit Your Information');
     }
 
+    public function landingpage(){
+      return view('frontend.landing_page');
+    }
+
 }

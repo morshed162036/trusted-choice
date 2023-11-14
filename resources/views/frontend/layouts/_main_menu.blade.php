@@ -27,7 +27,7 @@
             </ul>
         </li>
         <li class="mega-menu-item @yield('sister_concern')">
-            <a href="{{ route('products.all') }}" class="mega-menu-link">Sister Concern</a>
+            <a href="{{ route('landing.page') }}" class="mega-menu-link">Sister Concern</a>
           {{--  <ul class="mega-submenu">
                  @foreach($categories as $category)
                     <li><a href="{{ route('products',[$category->id,$category->slug]) }}">{{ $category->category_name }}</a></li>
