@@ -160,7 +160,7 @@
         <!--services-section-->
         <section class="ttm-row services-section ttm-bgcolor-grey clearfix">
             <div class="container">
-{{--                <div class="row">--}}
+               <div class="row">
 {{--                    <div class="col-lg-12">--}}
 {{--                        <div class="padding_top75 res-991-padding_top0"></div>--}}
 {{--                        <!-- section title -->--}}

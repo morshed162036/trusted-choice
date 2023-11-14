@@ -10,6 +10,7 @@ use App\Models\Post;
 use App\Models\PostCategory;
 use App\Models\Product;
 use App\Models\Slider;
+use App\Models\Service;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
@@ -34,7 +35,12 @@ class FrontendController extends Controller
     }
     public function services()
     {
-        return view('frontend.homePage');
+        return view('frontend.service');
+    }
+    public function serviceDetails(){
+        $service = '';
+        //$service = Service::findorFail($id);
+        return view('frontend.service-details')->with(compact('service'));
     }
 
     public function productsPage()
