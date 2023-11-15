@@ -241,7 +241,7 @@
 
                 <div class="container">
                     <div class="col-lg-12">
-                        <h3 class="text-center">Our product</h3>
+                        <h3 class="text-center" style="color: #2e3192">Our product</h3>
                     </div>
                     <!-- row -->
                     <div class="row slick_slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "arrows":false, "autoplay":false, "dots":false, "infinite":true, "responsive":[{"breakpoint":992,"settings":{"slidesToShow": 2}},{"breakpoint":840,"settings":{"slidesToShow": 2}},{"breakpoint":650,"settings":{"slidesToShow": 1}}]}'>
@@ -519,7 +519,7 @@
             </section>
             <!--services-section end-->
 
-                <h3 class="text-center">Our Sister Concern Company</h3>
+                <h3 class="text-center" style="color: #2e3192">Our Sister Concern Company</h3>
 
              <!--Sister concern-section-->
             <section class="ttm-row client-section ttm-bgcolor-grey clearfix mt-4" id="Concern">
@@ -538,7 +538,7 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="client-box">
-                                <div class="ttm-client-logo-tooltip" data-tooltip="Trusted Printers">
+                                <div class="ttm-client-logo-tooltip" data-tooltip="Trusted printers">
                                     <div class="client-thumbnail">
                                         <img class="img-fluid auto_size" width="160" height="98" src="{{asset('frontend')}}/images/product/printed.jfif" alt="image">
                                     </div>
@@ -547,7 +547,7 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="client-box">
-                                <div class="ttm-client-logo-tooltip" data-tooltip="Trusted choice">
+                                <div class="ttm-client-logo-tooltip" data-tooltip="Trusted  Choice">
                                     <div class="client-thumbnail">
                                         <img class="img-fluid auto_size" width="160" height="98" src="{{asset('frontend')}}/images/product/trusted.jfif" alt="image">
                                     </div>
@@ -556,7 +556,7 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="client-box">
-                                <div class="ttm-client-logo-tooltip" data-tooltip="Trusted choice">
+                                <div class="ttm-client-logo-tooltip" data-tooltip="Trusted  Choice">
                                     <div class="client-thumbnail">
                                         <img class="img-fluid auto_size" width="160" height="98" src="{{asset('frontend')}}/images/product/trusted.jfif" alt="image">
                                     </div>
@@ -613,7 +613,7 @@
                                             <h2 class="title">We Provide Best <b>Solution For Preparing Your Success</b></h2>
                                         </div>
                                         <div class="title-desc">
-                                            <p>With production sites enhanced by tried and tested fabric collection. This means our clients get exactly what they want, very single time from wide range.</p>
+                                            <p>With production sites enhanced by tried and tested trusted collection. This means our clients get exactly what they want, very single time from wide range.</p>
                                         </div>
                                     </div><!-- section title end -->
                                 </div>
@@ -773,7 +773,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="padding_top30">
-                                    <h2>Contact us</h2>
+                                    <h3 class="text-center" style="color: #2e3192">Contact us</h3>
                                     <form id="contact_form" class="wrap-form contact_form padding_top15" method="post" action="#">
                                         <div class="row ttm-boxes-spacing-30px">
                                             <div class="col-sm-6 ttm-box-col-wrapper">
@@ -1495,7 +1495,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                             <div class="widget widget-latest-tweets clearfix">
-                                <h3 class="text-center">Contact Us</h3>
+                                <h3 class="widget-title">Contact Us</h3>
                                 <ul class="widget_contact_wrapper">
                                     <li><i class="ttm-textcolor-skincolor fa fa-map-marker"></i>4789 Melmorn Street,Zakila Ton Mashintron Town</li>
                                     <li><i class="ttm-textcolor-skincolor fa fa-phone"></i>(+01) 123 456 7890</li>
