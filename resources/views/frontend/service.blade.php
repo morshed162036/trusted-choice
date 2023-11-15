@@ -43,11 +43,11 @@
                                 <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
                                     <!-- featured-thumbnail -->
                                     <div class="featured-thumbnail">
-                                        <img class="img-fluid" src="{{ asset('frontend/images/portfolio/portfolio-01-768x512.jpg') }}" alt="image">
+                                        <img class="img-fluid" src="{{ asset($service->photo) }}" alt="image">
                                     </div>
                                     <!-- featured-thumbnail end-->
                                     <div class="ttm-media-link">
-                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="{{ $service->service_name }}" href="{{ asset('frontend/images/portfolio/portfolio-01-1200x800.jpg') }}" data-rel="prettyPhoto" tabindex="0">
+                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="{{ $service->service_name }}" href="{{ asset($service->photo) }}" data-rel="prettyPhoto" tabindex="0">
                                             <i class="fa fa-search"></i>
                                         </a>
                                         <a href="{{ route('services.details',$service->id) }}" class="ttm_link" tabindex="0"><i class="fa fa-random"></i></a>

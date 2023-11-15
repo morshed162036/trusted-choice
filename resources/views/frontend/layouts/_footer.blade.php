@@ -47,7 +47,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                 <div class="widget widget_nav_menu clearfix">
-                    <h3 class="widget-title">Quick Links</h3>
+                    <h3 class="widget-title">Our Product</h3>
                     <ul id="menu-footer-quick-links" class="menu">
                         <li><a href="{{ route('about.all') }}">About Us</a></li>
                         <li><a href="{{ route('about.all') }}">Product</a></li>
@@ -58,6 +58,16 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
+                <div class="widget widget_nav_menu clearfix">
+                    <h3 class="widget-title">Our Service</h3>
+                    <ul id="menu-footer-quick-links" class="menu">
+                        @foreach(\App\Models\Service::limit(5)->get() as $service)
+                        <li><a href="{{ route('services.details',$service->id) }}">{{ $service->title }}</a></li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+            {{-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                 <div class="widget widget-recent-post clearfix">
                     <h3 class="widget-title">Recent Posts</h3>
                     <ul class="widget-post ttm-recent-post-list">
@@ -79,7 +89,7 @@
                         @endforeach
                     </ul>
                 </div>
-            </div>
+            </div> --}}
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                 <div class="widget widget-latest-tweets clearfix">
                     <h3 class="widget-title">Contact Us</h3>

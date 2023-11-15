@@ -5,9 +5,9 @@
                 <a class="navbar-brand" href="{{ route('dashboard') }}">
                     <div class="brand-logo">
                         @if(!empty($settings->logo))
-                            <img class="logo" src="{{ asset($settings->logo) }}" style="width: 120px; height: 120px;" />
+                            <img class="logo" src="{{ asset($settings->logo) }}" style="width: 150px; height: auto;" />
                         @else
-                            <img class="logo" src="{{ asset('') }}/app-assets/images/logo/logo.png" />
+                            <img class="logo" src="{{ asset('backend/app-assets/images/logo/logo.png') }}" />
                         @endif
                     </div>
 
@@ -70,14 +70,14 @@
 
             <li class=" nav-item"><a href="#"><i class="bx bxl-product-hunt"></i><span class="menu-title" data-i18n="Menu Levels">Product</span></a>
                 <ul class="menu-content">
-                    <li class="@yield('productCreate')"><a href="{{ route('product.create') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">New Product</span></a>
+                    <li class="@yield('productCreate')"><a href="{{ route('product-list.create') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">New Product</span></a>
                     </li>
-                    <li class="@yield('productList')"><a href="{{ route('product.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">All Product</span></a>
+                    <li class="@yield('productList')"><a href="{{ route('product-list.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">All Product</span></a>
                     </li>
-                    <li class="@yield('categoryCreate')"><a href="{{ route('category.create') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">New Category</span></a>
+                    {{-- <li class="@yield('categoryCreate')"><a href="{{ route('category.create') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">New Category</span></a>
                     </li>
                     <li class="@yield('categoryList')"><a href="{{ route('category.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">All Category</span></a>
-                    </li>
+                    </li> --}}
                 </ul>
             </li>
             {{-- <li class=" nav-item"><a href="#"><i class="bx bx-crop"></i><span class="menu-title" data-i18n="Menu Levels">CRM</span></a>

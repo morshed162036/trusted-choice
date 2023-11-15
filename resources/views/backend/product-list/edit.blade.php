@@ -1,6 +1,6 @@
 @extends('backend.layouts.master')
-@section('title','Service Edit')
-@section('serviceCreate','active')
+@section('title','product Edit')
+@section('productCreate','active')
 @section('vendorCSS')
     <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/vendors/css/forms/select/select2.min.css') }}">
 @endsection
@@ -12,12 +12,12 @@
         <div class="content-header-left col-12 mb-2 mt-1">
             <div class="row breadcrumbs-top">
                 <div class="col-12">
-                    <h5 class="content-header-title float-left pr-1 mb-0"><a href="{{ route('service.index') }}">Service</a></h5>
+                    <h5 class="content-header-title float-left pr-1 mb-0"><a href="{{ route('product-list.index') }}">Product</a></h5>
                     <div class="breadcrumb-wrapper col-12">
                         <ol class="breadcrumb p-0 mb-0">
-                            <li class="breadcrumb-item"><a href="{{ route('service.index') }}"><i class="bx bx-event-plus"></i></a>
+                            <li class="breadcrumb-item"><a href="{{ route('product-list.index') }}"><i class="bx bx-event-plus"></i></a>
                             </li>
-                            <li class="breadcrumb-item active">Update Service</li>
+                            <li class="breadcrumb-item active">Update Product</li>
                         </ol>
                     </div>
                 </div>
@@ -36,19 +36,19 @@
                         </div>
                         <div class="card-content">
                             <div class="card-body">
-                                <form class="form-horizontal"  action="{{ route('service.update',$service->id) }}" method="POST" enctype="multipart/form-data">
+                                <form class="form-horizontal"  action="{{ route('product-list.update',$product->id) }}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     @method('PUT')
                                     <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label>Service Name </label>
+                        <label>Product Name </label>
                         <div class="controls position-relative has-icon-left">
-                            <input type="text" name="service_name" class="form-control" value="{{ old('service_name',isset($service->service_name)?ucwords($service->service_name):null) }}" required  placeholder="Service Name">
+                            <input type="text" name="product_name" class="form-control" value="{{ old('product_name',isset($product->product_name)?ucwords($product->product_name):null) }}" required  placeholder="Product Name">
                             <div class="form-control-position">
                                 <i class="bx bx-user"></i>
                             </div>
-                            @error('service_name')
+                            @error('product_name')
                             <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
@@ -56,9 +56,9 @@
                 </div>
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label>Service Title </label>
+                        <label>Product Title </label>
                         <div class="controls position-relative has-icon-left">
-                            <input type="text" name="title" class="form-control" value="{{ old('title',isset($service->title)?ucwords($service->title):null) }}" required  placeholder="Service Name">
+                            <input type="text" name="title" class="form-control" value="{{ old('title',isset($product->title)?ucwords($product->title):null) }}" required  placeholder="Product Name">
                             <div class="form-control-position">
                                 <i class="bx bx-user"></i>
                             </div>
@@ -70,9 +70,9 @@
                 </div>
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label>Service Heading </label>
+                        <label>Product Heading </label>
                         <div class="controls position-relative has-icon-left">
-                            <input type="text" name="heading" class="form-control" value="{{ old('heading',isset($service->heading)?ucwords($service->heading):null) }}" required  placeholder="Service Name">
+                            <input type="text" name="heading" class="form-control" value="{{ old('heading',isset($product->heading)?ucwords($product->heading):null) }}" required  placeholder="Product Name">
                             <div class="form-control-position">
                                 <i class="bx bx-user"></i>
                             </div>
@@ -84,9 +84,9 @@
                 </div>
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label>Service Short Text </label>
+                        <label>Product Short Text </label>
                         <div class="controls position-relative has-icon-left">
-                            <input type="text" name="short_text" class="form-control" value="{{ old('short_text',isset($service->short_text)?ucwords($service->short_text):null) }}" required  placeholder="Service Name">
+                            <input type="text" name="short_text" class="form-control" value="{{ old('short_text',isset($product->short_text)?ucwords($product->short_text):null) }}" required  placeholder="Product Name">
                             <div class="form-control-position">
                                 <i class="bx bx-user"></i>
                             </div>
@@ -98,9 +98,9 @@
                 </div>
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label>Service Long Text </label>
+                        <label>Product Long Text </label>
                         <div class="controls position-relative has-icon-left">
-                            <input type="text" name="long_text" class="form-control" value="{{ old('long_text',isset($service->long_text)?ucwords($service->long_text):null) }}" required  placeholder="Service Name">
+                            <input type="text" name="long_text" class="form-control" value="{{ old('long_text',isset($product->long_text)?ucwords($product->long_text):null) }}" required  placeholder="Product Name">
                             <div class="form-control-position">
                                 <i class="bx bx-user"></i>
                             </div>
@@ -112,9 +112,9 @@
                 </div>
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label>Service Description </label>
+                        <label>Product Description </label>
                         <div class="controls position-relative has-icon-left">
-                            <input type="text" name="description" class="form-control" value="{{ old('description',isset($service->description)?ucwords($service->description):null) }}" required  placeholder="Service Name">
+                            <input type="text" name="description" class="form-control" value="{{ old('description',isset($product->description)?ucwords($product->description):null) }}" required  placeholder="Product Name">
                             <div class="form-control-position">
                                 <i class="bx bx-user"></i>
                             </div>
@@ -124,11 +124,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                {{-- <div class="col-md-6">
                     <div class="form-group">
                         <label>Video URL</label>
                         <div class="controls position-relative has-icon-left">
-                            <input type="text" name="video" class="form-control" value="{{ old('video',isset($service->video)?ucwords($service->video):null) }}" required  placeholder="Service Name">                            <div class="form-control-position">
+                            <input type="text" name="video" class="form-control" value="{{ old('video',isset($product->video)?ucwords($product->video):null) }}" required  placeholder="Product Name">                            <div class="form-control-position">
                                 <i class="bx bx-user"></i>
                             </div>
                             @error('video')
@@ -136,16 +136,16 @@
                             @enderror
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label>Service Photo</label>
+                        <label>Product Photo</label>
                         <div class="controls custom-file">
                             <input name="photo" type="file" class="custom-file-input" id="photo">
                             <label class="custom-file-label" for="photo">Choose file</label>
-                            @if($service->photo != null)
-                                <img src="{{ asset($service->photo) }}" class="user-profile-image rounded" alt="service image" style="height: 150px !important; width: 250px !important;" >
+                            @if($product->photo != null)
+                                <img src="{{ asset($product->photo) }}" class="user-profile-image rounded" alt="product image" style="height: 150px !important; width: 250px !important;" >
                             @else
                                 <div class="badge badge-pill badge-light-danger mr-1"> No Slider Photo Found.</div>
                             @endif
@@ -169,7 +169,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary float-right" >Update Service</button>
+                    <button type="submit" class="btn btn-primary float-right" >Update Product</button>
                 </div>
             </div>
                                 </form>
