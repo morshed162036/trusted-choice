@@ -167,7 +167,7 @@
                                     <h2 class="title">Our Trusted Choice Will <b>Build Your Trust</b></h2>
                                 </div>
                                 <div class="title-desc">
-                                    <p>We’ve been established as a family furnishers business for over 60 years. With a beautiful showroom in Kolkata, out friendly staff pride themselves in providing a high level of service.</p>
+                                    <p>"Welcome to Trusted Choice, where trust is our foundation. Our commitment is simple: Building trust that lasts. Discover a world of reliable options crafted to earn your confidence, making decision-making effortless and trustworthy. Your trusted choice for a dependable journey."</p>
                                 </div>
                             </div><!-- section title end -->
                             <div class="row">
@@ -349,7 +349,7 @@
                 <div class="row">
                     <div class="col-lg-9">
                         <h2>The Trusted Choice, Product, And Apparel Manufacturing Garments Industries.</h2>
-                        <p>Saimex Export trusted aims to provide the best price on authentic trusted. Every Harris Tweed or Moon Wool order also includes original swing tags and labels. We keep always keep an eye on quality.</p>
+                        <p>Trusted Choice Export trusted aims to provide the best price on authentic trusted. Every Harris Tweed or Moon Wool order also includes original swing tags and labels. We keep always keep an eye on quality.</p>
                     </div>
                     <div class="col-lg-3">
                         <div class="text-lg-right">

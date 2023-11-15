@@ -70,12 +70,15 @@
                                             <div class="featured-imagebox featured-imagebox-team style1">
                                                 <div class="ttm-team-box-view-overlay">
                                                     <div class="featured-thumbnail">
-                                                        <img class="img-fluid" src="{{ asset($product->photo) }}" alt="image">
+                                                    
+
+                                                      <img class="img-fluid" src="{{ asset($product->photo) }}" alt="image">
                                                     </div>
                                                 </div>
                                             <div class="featured-content">
                                                 <div class="featured-title">
                                                     <h5>{{ ucwords($product->title) }}</h5>
+                                                
                                                 </div>
                                                 <p class="team-position">{!! $product->description_part1 !!}  </p>
                                                 </div>

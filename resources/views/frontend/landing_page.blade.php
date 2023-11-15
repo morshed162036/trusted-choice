@@ -241,7 +241,7 @@
 
                 <div class="container">
                     <div class="col-lg-12">
-                        <h3>Our product</h3>
+                        <h3 class="text-center">Our product</h3>
                     </div>
                     <!-- row -->
                     <div class="row slick_slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "arrows":false, "autoplay":false, "dots":false, "infinite":true, "responsive":[{"breakpoint":992,"settings":{"slidesToShow": 2}},{"breakpoint":840,"settings":{"slidesToShow": 2}},{"breakpoint":650,"settings":{"slidesToShow": 1}}]}'>
@@ -428,7 +428,10 @@
                                 </div>
                             </div></div>
                         </div>
+                                               
+
                         <div class="col-lg-7">
+                             
                             <div class="row ttm-vertical_sep">
                                 <div class="col-md-6 col-sm-6">
                                     <!--featured-icon-box-->
@@ -516,9 +519,11 @@
             </section>
             <!--services-section end-->
 
+                <h3 class="text-center">Our Sister Concern Company</h3>
 
              <!--Sister concern-section-->
             <section class="ttm-row client-section ttm-bgcolor-grey clearfix mt-4" id="Concern">
+
                 <div class="container">
                     <!--row -->
                     <div class="row slick_slider" data-slick='{"slidesToShow": 5, "slidesToScroll": 1, "arrows":false, "autoplay":false, "infinite":true, "responsive": [{"breakpoint":1200,"settings":{"slidesToShow": 5}}, {"breakpoint":1024,"settings":{"slidesToShow": 4}}, {"breakpoint":777,"settings":{"slidesToShow": 3}},{"breakpoint":575,"settings":{"slidesToShow": 2}},{"breakpoint":400,"settings":{"slidesToShow": 1}}]}'>
@@ -798,8 +803,8 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-12">
-                                                <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor w-100" type="submit">Send Message!</button>
+                                            <div class="col-sm-12 text-center">
+                                                <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor " type="submit">Send Message!</button>
                                             </div>
                                         </div>
                                     </form>
@@ -1490,7 +1495,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                             <div class="widget widget-latest-tweets clearfix">
-                                <h3 class="widget-title">Contact Us</h3>
+                                <h3 class="text-center">Contact Us</h3>
                                 <ul class="widget_contact_wrapper">
                                     <li><i class="ttm-textcolor-skincolor fa fa-map-marker"></i>4789 Melmorn Street,Zakila Ton Mashintron Town</li>
                                     <li><i class="ttm-textcolor-skincolor fa fa-phone"></i>(+01) 123 456 7890</li>

@@ -49,7 +49,16 @@
                                     <h2 class="title">An Ultimate Trusted Choice Brand in <b>Market  </b></h2>
                                 </div>
                                 <div class="title-desc">
-                                    <p>Welcome to Trusted Choice, where style ascends to new heights effortlessly. We're not just crafting accessories; we're sculpting statements of allure and sophistication. With Trusted Choice, your brand steps into an era where every accessory is a masterpiece, each piece an emblem of quality, innovation, and enduring style. Choose us, and let your brand's fashion journey be a tapestry of elegance. Elevate your style; choose Trusted Choice for an iconic fashion experience.</p>
+                                    <p>TRUSTED CHOICE, F&F      ACCESSORIES is committed to 
+                                        serve our buyers with a wide range of quality garments 
+                                        accessories within the agreed time. Our motto is to pay 
+                                        highest level of attention to follow the advice of our 
+                                        buyers in terms of competitive price & timely delivery 
+                                        which result to make our buyer satisfy and happy.
+                                        Our goal is not only to satisfy our individual's buyer but 
+                                        also to flourish the image of Bangladeshi brand to rest of 
+                                        the world. That is why we never compromise with the 
+                                        qualit</p>
                                 </div>
                             </div><!-- section title end -->
                             <div class="ttm-highlight-quote margin_top35 clearfix">
@@ -61,8 +70,8 @@
                                              src="{{ asset('frontend') }}/images/trusted-choice-ceo.PNG" alt="author-quote">
                                     </div>
                                     <div class="d-inline-block padding_left30">
-                                        <h2 class="fs-20 mb-0">Md. Sazzad Hossain</h2>
-                                        <label>Chairman and founder</label>
+                                        <h2 class="fs-20 mb-0">Kazi Nazmul Alam</h2>
+                                        <label>Proprietor</label>
                                     </div>
                                 </div>
                             </div>
