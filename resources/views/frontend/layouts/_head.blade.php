@@ -1,12 +1,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="Saimex Export, Saimex, Saimex BD" />
+<meta name="keywords" content="Trusted Choice Export, Trusted Choice, Trusted Choice BD" />
 <meta name="description" content="One Of The Leaders In Textile Market Since 2010" />
-<meta name="author" content="https://www.saimexbd.com/" />
+<meta name="author" content="https://www.Trusted Choicebd.com/" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>@yield('title') - {{ config('app.name', 'saimexbd.com') }}</title>
+<title>@yield('title') - {{ config('app.name', 'TrustedChoicebd.com') }}</title>
 
 @if(!empty($settings->favicon))
     <link rel="icon" href="{{ asset($settings->favicon) }}" type="image/x-icon">

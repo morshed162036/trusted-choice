@@ -50,8 +50,9 @@
                                 <div class="featured-imagebox featured-imagebox-team style1">
                                     <div class="ttm-team-box-view-overlay">
                                         <div class="featured-thumbnail" style="border: 1px solid #c3002f;">
+                                            
                                             <img class="img-fluid" src="https://as2.ftcdn.net/v2/jpg/00/89/55/15/1000_F_89551596_LdHAZRwz3i4EM4J0NHNHy2hEUYDfXc0j.jpg" alt="image">
-{{--                                                <img class="img-fluid" src="{{ asset($category->photo) }}" alt="image">--}}
+                                               {{-- <img class="img-fluid" src="{{ asset($category->photo) }}" alt="image"> --}}
                                         </div>
                                     </div>
                                     <div class="featured-content">

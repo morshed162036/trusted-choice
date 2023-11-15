@@ -799,8 +799,8 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-12">
-                                                <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor w-100" type="submit">Send Message!</button>
+                                            <div class="col-sm-12 text-center">
+                                                <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor " type="submit">Send Message!</button>
                                             </div>
                                         </div>
                                     </form>
