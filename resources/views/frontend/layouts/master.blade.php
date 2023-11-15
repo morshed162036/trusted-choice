@@ -88,8 +88,8 @@
                             <div class="site-navigation d-flex flex-row align-items-center justify-content-between">
                                 <!-- site-branding -->
                                 <div class="site-branding ">
-                                    <a class="home-link" href="{{ route('home.all') }}" title="Fablio" rel="home">
-                                        <img id="logo-img" height="37" width="138" class="img-fluid auto_size"
+                                    <a class="home-link" href="{{ route('home.all') }}" rel="home">
+                                        <img id="logo-img" width="138" class="img-fluid auto_size"
                                              src="{{asset($settings->logo)}}" alt="logo-img">
                                     </a>
                                 </div><!-- site-branding end -->

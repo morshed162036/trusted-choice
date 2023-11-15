@@ -34,34 +34,39 @@
         <div class="container">
             <!-- row -->
             <div class="row mb_15 mt_15">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <!-- featured-imagebox-portfolio -->
-                    <div class="featured-imagebox featured-imagebox-portfolio style2">
-                        <!-- ttm-box-view-overlay -->
-                        <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
-                            <!-- featured-thumbnail -->
-                            <div class="featured-thumbnail">
-                                <img class="img-fluid" src="{{ asset('frontend/images/portfolio/portfolio-01-768x512.jpg') }}" alt="image">
-                            </div>
-                            <!-- featured-thumbnail end-->
-                            <div class="ttm-media-link">
-                                <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="Silk Fabric" href="{{ asset('frontend/images/portfolio/portfolio-01-1200x800.jpg') }}" data-rel="prettyPhoto" tabindex="0">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                                <a href="{{ route('services.details') }}" class="ttm_link" tabindex="0"><i class="fa fa-random"></i></a>
-                            </div>
+                @if ($services)
+                    @foreach ($services as $service)
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <!-- featured-imagebox-portfolio -->
+                            <div class="featured-imagebox featured-imagebox-portfolio style2">
+                                <!-- ttm-box-view-overlay -->
+                                <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
+                                    <!-- featured-thumbnail -->
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid" src="{{ asset('frontend/images/portfolio/portfolio-01-768x512.jpg') }}" alt="image">
+                                    </div>
+                                    <!-- featured-thumbnail end-->
+                                    <div class="ttm-media-link">
+                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="{{ $service->service_name }}" href="{{ asset('frontend/images/portfolio/portfolio-01-1200x800.jpg') }}" data-rel="prettyPhoto" tabindex="0">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <a href="{{ route('services.details',$service->id) }}" class="ttm_link" tabindex="0"><i class="fa fa-random"></i></a>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="{{ route('services.details',$service->id) }}"> {{ ucwords($service->service_name) }}</a></h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>{{ $service->short_text }}</p>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-portfolio end-->
                         </div>
-                        <div class="featured-content">
-                            <div class="featured-title">
-                                <h3><a href="{{ route('services.details') }}">Silk Fabric</a></h3>
-                            </div>
-                            <div class="featured-desc">
-                                <p>A scelerisque purus semper eget. Placerat in egestas erat imperdiet. Sit facilisis magna.</p>
-                            </div>
-                        </div>
-                    </div><!-- featured-imagebox-portfolio end-->
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                    @endforeach
+                @endif
+
+                {{-- <div class="col-lg-4 col-md-4 col-sm-6">
                     <!-- featured-imagebox-portfolio -->
                     <div class="featured-imagebox featured-imagebox-portfolio style2">
                         <!-- ttm-box-view-overlay -->
@@ -190,7 +195,7 @@
                             </div>
                         </div>
                     </div><!-- featured-imagebox-portfolio -->
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

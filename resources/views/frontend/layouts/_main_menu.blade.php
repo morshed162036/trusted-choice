@@ -21,6 +21,11 @@
         <li class="mega-menu-item @yield('services')">
             <a href="{{ route('services.all') }}" class="mega-menu-link">Service</a>
             <ul class="mega-submenu">
+                @foreach (\App\Models\Service::get() as $service)
+                <li><a href="{{ route('services.details',$service->id) }}">{{ $service->title }}</a></li>
+                @endforeach
+            </ul>
+            <ul class="mega-submenu">
                 {{-- @foreach($categories as $category)
                     <li><a href="{{ route('products',[$category->id,$category->slug]) }}">{{ $category->category_name }}</a></li>
                 @endforeach --}}
