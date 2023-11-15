@@ -39,6 +39,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::resource('product',\App\Http\Controllers\Backend\ProductController::class);
     Route::resource('slider',\App\Http\Controllers\Backend\SliderController::class);
     Route::resource('service',\App\Http\Controllers\Backend\ServiceController::class);
+    Route::resource('product-list',\App\Http\Controllers\Backend\ProductListController::class);
     Route::resource('sister-concern',\App\Http\Controllers\Backend\SisterConcernController::class);
     Route::resource('testimonial',\App\Http\Controllers\Backend\TestimonialController::class);
     Route::resource('crm',\App\Http\Controllers\Backend\CRMController::class);
