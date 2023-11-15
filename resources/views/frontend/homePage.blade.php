@@ -9,7 +9,7 @@
             @if(count($sliders) > 0)
                 @foreach($sliders as $slider)
                  <div class="slide">
-                    <div class="slide_img" style="background-image: url({{ asset($slider->slider_photo) }});"></div>
+                    <div class="slide_img " style="background-image: url({{ asset($slider->slider_photo) }}); height:550px;"></div>
                     <div class="slide__content">
                         <div class="container">
                             <div class="row">
