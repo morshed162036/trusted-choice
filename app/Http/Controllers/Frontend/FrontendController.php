@@ -35,11 +35,12 @@ class FrontendController extends Controller
     }
     public function services()
     {
-        return view('frontend.service');
+        $services = Service::get()->all();
+        return view('frontend.service')->with(compact('services'));
     }
-    public function serviceDetails(){
-        $service = '';
-        //$service = Service::findorFail($id);
+    public function serviceDetails($id){
+        //$service = '';
+        $service = Service::findorFail($id);
         return view('frontend.service-details')->with(compact('service'));
     }
 
