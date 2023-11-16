@@ -136,10 +136,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- row end -->
+                    </div>
                 </div>
             </div>
 
 
-        </div><!--site-main end-->
+        </div>
 @endsection

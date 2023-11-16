@@ -337,61 +337,7 @@
                 </div>
             </section>
             <!--padding_top_zero-section end -->
-   {{--  our prduct start  --}}
-
-            <!--padding_top_zero-section end-->
-            {{--  <section class="ttm-row padding_top_zero-section margin_top90 res-991-margin_top0 bg-layer-equal-height ttm-bgcolor-grey clearfix">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-xs-12">
-                            <div class="padding_top90 res-991-padding_top60">
-                                <!-- section title -->
-                                <div class="section-title">
-                                    <div class="title-header">
-                                        <h3>ABOUT FABLIO</h3>
-                                        <h2 class="title">The Leading Textile Brand in <b>Market Since 1970</b></h2>
-                                    </div>
-                                    <div class="title-desc">
-                                        <p>Since more than 40 years, FABLIO is operating in the textile market manufacture and trader. As years go by, the range of produced textiles has been increased, besides the regular production became the largest exporter.</p>
-                                    </div>
-                                </div><!-- section title end -->
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <ul class="ttm-list ttm-bordered-lists ttm-list-style-icon ttm-list-icon-color-skincolor ttm-textcolor-darkgrey">
-                                            <li><i class="ti ti-check"></i><span class="ttm-list-li-content">Trends the Current Market</span></li>
-                                            <li><i class="ti ti-check"></i><span class="ttm-list-li-content">The rayon fabrics wholesaler</span></li>
-                                            <li><i class="ti ti-check"></i><span class="ttm-list-li-content">The Global fabrics distributor</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <ul class="ttm-list ttm-bordered-lists ttm-list-style-icon ttm-list-icon-color-skincolor ttm-textcolor-darkgrey">
-                                            <li><i class="ti ti-check"></i><span class="ttm-list-li-content">Biological tested fabrics</span></li>
-                                            <li><i class="ti ti-check"></i><span class="ttm-list-li-content">Awarded For Best Exporter</span></li>
-                                            <li><i class="ti ti-check"></i><span class="ttm-list-li-content">Stable partner global textile</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="margin_top20">
-                                    <div class="d-inline-block">
-                                        <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor margin_right20 margin_top15" href="about-us-2.html">view more</a>
-                                        <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-dark  margin_top15" href="contact-us.html">contact us</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-8 col-sm-8">
-                            <div class="mt_160 text-md-right res-991-margin_top40">
-                                <div class="ttm_single_image-wrapper ttm_single_image_hover imagestyle-one res-991-margin_right0">
-                                    <img class="img-fluid auto_size" src="{{asset('frontend')}}/images/single-img-02.jpg" alt="single-02" height="663" width="504">
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- row end -->
-                </div>
-            </section>  --}}
-            <!--padding_top_zero-section end-->
-
-
+   
             <!--services-section-->
             <section class="ttm-row services-section clearfix" id="Service" mb-3>
                 <div class="container">
@@ -1463,9 +1409,9 @@
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 widget-area">
                             <div class="widget widget_nav_menu clearfix">
-                               <h3 class="widget-title">Textile Services</h3>
+                               <h3 class="widget-title">Trusted Services</h3>
                                <ul id="menu-footer-quick-links" class="menu">
-                                    <li><a href="fabric-printing.html">Patch Fabric Works</a></li>
+                                    <li><a href="fabric-printing.html">Patch Trusted Works</a></li>
                                     <li><a href="fabric-dyeing.html">Garment Stitching</a></li>
                                     <li><a href="engineering.html">Pattern, Art Making</a></li>
                                     <li><a href="manufacture.html">Stone Work Embroidery</a></li>
@@ -1480,14 +1426,14 @@
                                     <li>
                                         <a href="blog-single.html"><img class="img-fluid" src="{{asset('frontend')}}/images/blog/b_thumbb-01.jpg" alt="post-img"></a>
                                         <div class="post-detail">
-                                            <a href="blog-single.html">Can textiles lead the way during the pandemic?</a>
+                                            <a href="blog-single.html">Can trusted lead the way during the pandemic?</a>
                                             <span class="post-date">March 18, 2021</span>
                                         </div>
                                     </li>
                                     <li>
                                         <a href="blog-single.html"><img class="img-fluid" src="{{asset('frontend')}}/images/blog/b_thumbb-02.jpg" alt="post-img"></a>
                                         <div class="post-detail">
-                                            <a href="blog-single.html">One stop solution for textiles fabrics</a>
+                                            <a href="blog-single.html">One stop solution for trusted choice</a>
                                             <span class="post-date">February 28, 2021</span>
                                         </div>
                                     </li>

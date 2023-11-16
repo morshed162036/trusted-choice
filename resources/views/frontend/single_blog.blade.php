@@ -73,16 +73,7 @@
                     </article><!-- post end -->
                 </div>
                 <div class="col-lg-4 widget-area sidebar-right">
-{{--                    <aside class="widget widget-search with-title">--}}
-{{--                        <h3 class="widget-title">Search</h3>--}}
-{{--                        <form role="search" method="get" class="search-form" action="#">--}}
-{{--                            <label>--}}
-{{--                                <span class="screen-reader-text">Search for:</span>--}}
-{{--                                <input type="search" class="input-text" placeholder="Search …" value="" name="s">--}}
-{{--                            </label>--}}
-{{--                            <button class="btn" type="submit"><i class="fa fa-search"></i> </button>--}}
-{{--                        </form>--}}
-{{--                    </aside>--}}
+
                     <aside class="widget widget-Categories with-title">
                         <h3 class="widget-title">Categories</h3>
                         <ul>

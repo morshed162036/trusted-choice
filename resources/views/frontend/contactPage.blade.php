@@ -159,42 +159,6 @@
                                     </div><!-- featured-icon-box end-->
                                 </div>
                             </div>
-{{--                            <h2 class="fs-24 padding_top20">Branch Office</h2>--}}
-{{--                            <div class="ttm-horizontal_sep width-100 margin_top20 margin_bottom5"></div>--}}
-{{--                            <div class="row">--}}
-{{--                                <div class="col-lg-6 col-md-6">--}}
-{{--                                    <!--featured-icon-box-->--}}
-{{--                                    <div class="featured-icon-box icon-align-before-content">--}}
-{{--                                        <div class="featured-icon">--}}
-{{--                                            <div class="ttm-icon ttm-icon_element-fill ttm-icon_element-color-grey ttm-icon_element-size-md ttm-icon_element-style-rounded">--}}
-{{--                                                <i class="themifyicon ti-location-pin ttm-textcolor-skincolor"></i>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="featured-content">--}}
-{{--                                            <div class="featured-title">--}}
-{{--                                                <h3 class="margin_bottom0 fs-18">Address</h3>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="featured-desc">123 King Street,Melbourne Victoria 5000,New York.</div>--}}
-{{--                                        </div>--}}
-{{--                                    </div><!-- featured-icon-box end-->--}}
-{{--                                </div>--}}
-{{--                                <div class="col-lg-6 col-md-6">--}}
-{{--                                    <!--featured-icon-box-->--}}
-{{--                                    <div class="featured-icon-box icon-align-before-content">--}}
-{{--                                        <div class="featured-icon">--}}
-{{--                                            <div class="ttm-icon ttm-icon_element-fill ttm-icon_element-color-grey ttm-icon_element-size-md ttm-icon_element-style-rounded">--}}
-{{--                                                <i class="themifyicon ti-email ttm-textcolor-skincolor"></i>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="featured-content">--}}
-{{--                                            <div class="featured-title">--}}
-{{--                                                <h3 class="margin_bottom0 fs-18">Call Us / Email</h3>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="featured-desc">+1800-200-123456<br>fablio.support@yourmail.com</div>--}}
-{{--                                        </div>--}}
-{{--                                    </div><!-- featured-icon-box end-->--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
                         </div>
                     </div>
                 </div><!-- row end -->

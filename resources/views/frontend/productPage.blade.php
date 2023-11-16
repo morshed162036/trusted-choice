@@ -36,25 +36,7 @@
             <!-- row -->
             <div class="row">
                 @includeIf('frontend._product_filter')
-{{--                <div class="col-lg-4 widget-area sidebar-left">--}}
-{{--                    <aside class="widget widget-nav-menu">--}}
-{{--                        <ul>--}}
-{{--                            @foreach($productCategories as $category)--}}
-{{--                                <li class=""><a href="{{ route('products',[$category->id,$category->slug]) }}"> {{ $category->category_name }} </a></li>--}}
-{{--                            @endforeach--}}
-{{--                        </ul>--}}
-{{--                    </aside>--}}
 
-{{--                    <aside class="widget contact-widget with-title">--}}
-{{--                        <h3 class="widget-title">Get in touch</h3>--}}
-{{--                        <ul class="contact-widget-wrapper">--}}
-{{--                            <li><i class="ttm-textcolor-skincolor ti ti-location-pin"></i>{{ $settings->address }}</li>--}}
-{{--                            <li><i class="ttm-textcolor-skincolor ti ti-email"></i><a href="mailto:{{ $settings->email }}" target="_blank">{{ $settings->email }}</a></li>--}}
-{{--                            <li><i class="ttm-textcolor-skincolor ti ti-mobile"></i>{{ $settings->phone }}</li>--}}
-{{--                            <li><i class="ttm-textcolor-skincolor ti ti-alarm-clock"></i>Mon to Sat - 9:00am to 6:00pm <br> (Friday Closed)</li>--}}
-{{--                        </ul>--}}
-{{--                    </aside>--}}
-{{--                </div>--}}
  <div class="col-lg-8 content-area">
                     <a class="btn btn-primary" href="{{ url()->previous() }}">Back</a> <br> <br>
                     <span>
