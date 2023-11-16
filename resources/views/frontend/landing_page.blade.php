@@ -291,11 +291,11 @@
                             <div class="featured-imagebox featured-imagebox-services style1">
                                 <!-- featured-thumbnail -->
                                 <div class="featured-thumbnail">
-                                    <img class="img-fluid" src="{{asset('frontend')}}/images/services/services-03-768x512.jpg" alt="image">
+                                    <img class="img-fluid" src="{{asset('frontend')}}/images/product/Twill Tape.jfif" alt="image">
                                 </div><!-- featured-thumbnail end-->
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h3><a href="engineering.html">Engineering</a></h3>
+                                        <h3><a href="engineering.html">Twill Tape</a></h3>
                                         {{--  <div class="ttm-details-link">
                                             <a href="engineering.html"><i class="themifyicon ti-arrow-top-right"></i></a>
                                         </div>  --}}
@@ -306,26 +306,25 @@
                                 </div>
                             </div><!-- featured-imagebox end-->
                         </div>
-                        <div class="col-md-4 col-sm-6">
+                       <div class="col-md-4 col-sm-6">
                             <!--featured-imagebox-->
                             <div class="featured-imagebox featured-imagebox-services style1">
                                 <!-- featured-thumbnail -->
                                 <div class="featured-thumbnail">
-                                    <img class="img-fluid" src="{{asset('frontend')}}/images/services/services-04-768x512.jpg" alt="image">
+                                    <img class="img-fluid" src="{{asset('frontend')}}/images/product/woven_labels.jfif" alt="image">
                                 </div><!-- featured-thumbnail end-->
                                 <div class="featured-content">
                                     <div class="featured-title">
-                                        <h3><a href="manufacture.html">Manufacture</a></h3>
+                                        <h3><a href="fabric-dyeing.html">Woven Labels</a></h3>
                                         {{--  <div class="ttm-details-link">
-                                            <a href="manufacture.html"><i class="themifyicon ti-arrow-top-right"></i></a>
-                                         </div>  --}}
+                                            <a href="fabric-dyeing.html"><i class="themifyicon ti-arrow-top-right"></i></a>
+                                        </div>  --}}
                                     </div>
-                                     {{--  <div class="featured-desc">
-                                        <p>Choose from many fabrics and design your. Create and print only the fabric you need.</p>
+                                    {{--  <div class="featured-desc">
+                                        <p>It is the process of transfer dyes from the aqueous solution to the fiber surface</p>
                                     </div>  --}}
                                 </div>
-                            </div>
-                            <!-- featured-imagebox end-->
+                            </div><!-- featured-imagebox end-->
                         </div>
                     </div>
                     <div class="row">
@@ -1450,7 +1449,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 widget-area">
+                        {{--  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 widget-area">
                             <div class="widget newsletter_widget clearfix">
                                 <form id="subscribe-form" class="newsletter-form" method="post" action="#" data-mailchimp="true">
                                     <div class="mailchimp-inputbox clearfix" id="subscribe-content">
@@ -1461,7 +1460,7 @@
                                     <div id="subscribe-msg"></div>
                                 </form>
                             </div>
-                        </div>
+                        </div>  --}}
                     </div>
                 </div>
             </div>
@@ -1470,7 +1469,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="text-center">
-                                <span class="cpy-text">Copyright © 2021 <a href="#" class="ttm-textcolor-skincolor font-weight-500">Fablio </a> All rights reserved.</span>
+                                <span class="cpy-text">Copyright © 2023 <a href="#" class="ttm-textcolor-skincolor font-weight-500">Trusted Choice </a>Design and Development by zariq Ltd</span>
                                 <ul class="footer-nav-menu">
                                     <li><a href="about-us.html">About Us</a></li>
                                     <li><a href="contact-us.html">Contact Us</a></li>

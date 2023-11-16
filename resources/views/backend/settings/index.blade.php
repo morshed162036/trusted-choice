@@ -194,7 +194,7 @@
                                                                                                 <input type="text"
                                                                                                        name="phone"
                                                                                                        class="form-control"
-                                                                                                       maxlength="11"
+                                                                                                       maxlength="16"
                                                                                                        value="{{ old('phone',isset($settings->phone)?$settings->phone:null) }}"
                                                                                                        required
                                                                                                        data-validation-containsnumber-regex="(\d)+"

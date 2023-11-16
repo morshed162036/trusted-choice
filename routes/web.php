@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Frontend\FrontendController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','\App\Http\Controllers\Frontend\FrontendController')->name('home.all');
-Route::get('about-us','\App\Http\Controllers\Frontend\FrontendController@about')->name('about.all');
+Route::get('/',[FrontendController::class,'index'])->name('home.all');
+Route::get('about-us',[FrontendController::class,'about'])->name('about.all');
 Route::get('services','\App\Http\Controllers\Frontend\FrontendController@services')->name('services.all');
-Route::get('services-details','\App\Http\Controllers\Frontend\FrontendController@servicedetails')->name('services.details');
+Route::get('services-details/{id?}','\App\Http\Controllers\Frontend\FrontendController@servicedetails')->name('services.details');
 Route::get('products','\App\Http\Controllers\Frontend\FrontendController@productsPage')->name('products.all');
 Route::get('products/{id}/{slug?}','\App\Http\Controllers\Frontend\FrontendController@products')->name('products');
 Route::get('photo-gallery','\App\Http\Controllers\Frontend\FrontendController@galleries')->name('photo-gallery.all');
@@ -40,6 +40,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::resource('product',\App\Http\Controllers\Backend\ProductController::class);
     Route::resource('slider',\App\Http\Controllers\Backend\SliderController::class);
     Route::resource('service',\App\Http\Controllers\Backend\ServiceController::class);
+    Route::resource('product-list',\App\Http\Controllers\Backend\ProductListController::class);
     Route::resource('sister-concern',\App\Http\Controllers\Backend\SisterConcernController::class);
     Route::resource('testimonial',\App\Http\Controllers\Backend\TestimonialController::class);
     Route::resource('crm',\App\Http\Controllers\Backend\CRMController::class);

@@ -11,16 +11,16 @@
 @if(!empty($settings->favicon))
     <link rel="icon" href="{{ asset($settings->favicon) }}" type="image/x-icon">
 @else
-<link rel="shortcut icon" href="{{asset('frontend')}}/images/favicon.png" />
+<link rel="shortcut icon" href="{{asset('frontend/images/favicon.png')}}" />
 @endif
-<link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/css/bootstrap.min.css"/>
-<link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/css/animate.css"/>
-<link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/css/font-awesome.css"/>
-<link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/css/flaticon.css"/>
-<link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/css/themify-icons.css"/>
-<link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/css/slick.css">
-<link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/css/prettyPhoto.css">
-<link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/css/shortcodes.css"/>
-<link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/css/main.css"/>
-<link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/css/megamenu.css"/>
-<link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/css/responsive.css"/>
+<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/bootstrap.min.css')}}"/>
+<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/animate.css')}}"/>
+<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/font-awesome.css')}}"/>
+<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/flaticon.css')}}"/>
+<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/themify-icons.css')}}"/>
+<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/slick.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/prettyPhoto.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/shortcodes.css')}}"/>
+<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/main.css')}}"/>
+<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/megamenu.css')}}"/>
+<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/responsive.css')}}"/>

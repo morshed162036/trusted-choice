@@ -19,7 +19,9 @@
         <li class="mega-menu-item @yield('services')">
             <a href="{{ route('services.all') }}" class="mega-menu-link">Service</a>
             <ul class="mega-submenu">
-             
+                @foreach (\App\Models\Service::get() as $service)
+                <li><a href="{{ route('services.details',$service->id) }}">{{ $service->title }}</a></li>
+                @endforeach
             </ul>
         </li>
         <li class="mega-menu-item @yield('sister_concern')">
