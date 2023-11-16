@@ -100,19 +100,7 @@
                     </ul>
                 </div>
             </div>
-            {{-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 widget-area">
-                <div class="widget newsletter_widget clearfix">
-                    <form id="subscribe-form" class="newsletter-form" action="{{ route('user_subscribe.store') }}" method="POST" enctype="multipart/form-data" data-mailchimp="true">
-                        @csrf
-                        <div class="mailchimp-inputbox clearfix" id="subscribe-content">
-                            <input type="text" name="name" id="txtname" placeholder="Your Name *" required="">
-                            <input type="email" name="email" id="txtemail" placeholder="Your Email *" required="">
-                            <button class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-icon-btn-right ttm-btn-style-fill ttm-btn-color-skincolor" type="submit">Subscribe us<i class="fa fa-caret-right" aria-hidden="true"></i></button>
-                        </div>
-                        <div id="subscribe-msg"></div>
-                    </form>
-                </div>
-            </div> --}}
+          
         </div>
     </div>
 </div>

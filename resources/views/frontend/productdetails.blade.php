@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 @section('title', 'services')
-@section('services','active')
+@section('Services','active')
 @section('mainContent')
             <!-- page-title -->
             <div class="ttm-page-title-row ttm-bg ttm-bgimage-yes ttm-bgcolor-darkgrey clearfix">
@@ -10,13 +10,13 @@
                         <div class="col-lg-12">
                             <div class="ttm-page-title-row-inner">
                                 <div class="page-title-heading">
-                                    <h2 class="title">{{ $service->title }}</h2>
+                                    <h2 class="title">Fabric Printing</h2>
                                 </div>
                                 <div class="breadcrumb-wrapper">
                                     <span>
                                         <a title="Homepage" href="{{ route('home.all') }}">Home</a>
                                     </span>
-                                    <span>{{ $service->title }}</span>
+                                    <span>Fabric Printing</span>
                                 </div>
                             </div>
                         </div>
@@ -36,15 +36,14 @@
                     <div class="row">
                         <div class="col-lg-4 widget-area sidebar-left">
                             <aside class="widget widget-nav-menu">
-                                @if (\App\Models\Service::get())
-                                    @foreach (\App\Models\Service::get() as $service_menu)
-                                    <ul>
-                                        <li class="@if ($service_menu->id == $service->id)
-                                            active
-                                        @endif"><a href="{{ route('services.details',$service_menu->id) }}"> {{ $service_menu->title }} </a></li>
-                                    </ul>
-                                    @endforeach
-                                @endif
+                                <ul>
+                                    <li class="active"><a href="fabric-printing.html"> Fabric Printing </a></li>
+                                    <li><a href="{{ route('services.details') }}"> Fabric Dyeing </a></li>
+                                    <li><a href="{{ route('services.details') }}"> Engineering </a></li>
+                                    <li><a href="{{ route('services.details') }}"> Manufacture </a></li>
+                                    <li><a href="{{ route('services.details') }}"> Stich Fabric </a></li>
+                                    <li><a href="{{ route('services.details') }}"> We Design Fabric </a></li>
+                                </ul>
                             </aside>
                             
                             <aside class="widget widget-banner">
@@ -57,7 +56,7 @@
                                             <h3 class="ttm-textcolor-skincolor">Have Questions?</h3>
                                             <p>Our Client Care Managers Are On Call 24/7 To Answer Your Question.</p>
                                             <ul>
-                                                <li><i class="flaticon flaticon-phone-call"></i>+88 {{ $info =  \App\Models\Settings::get()->first()->phone}}</li>
+                                                <li><i class="flaticon flaticon-phone-call"></i>+1800 200 4567</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -65,26 +64,25 @@
                             </aside>
                             <aside class="widget contact-widget with-title">
                                 <h3 class="widget-title">Get in touch</h3>
-
                                 <ul class="contact-widget-wrapper">
-                                    <li><i class="ttm-textcolor-skincolor ti ti-location-pin"></i>{{ \App\Models\Settings::get()->first()->address }}</li>
-                                    <li><i class="ttm-textcolor-skincolor ti ti-email"></i><a href="mailto:{{ $info =  \App\Models\Settings::get()->first()->email}}" target="_blank">{{ $info =  \App\Models\Settings::get()->first()->email }}</a></li>
-                                    <li><i class="ttm-textcolor-skincolor ti ti-mobile"></i>(+88) {{ $info =  \App\Models\Settings::get()->first()->phone}}</li>
-                                    {{-- <li><i class="ttm-textcolor-skincolor ti ti-alarm-clock"></i>Mon to Sat - 9:00am to 6:00pm <br> (Sunday Closed)</li> --}}
+                                    <li><i class="ttm-textcolor-skincolor ti ti-location-pin"></i>Honey Business Center 24 Fifth st., Los Angeles, USA</li>
+                                    <li><i class="ttm-textcolor-skincolor ti ti-email"></i><a href="mailto:info@example.com" target="_blank">info@example.com</a></li>
+                                    <li><i class="ttm-textcolor-skincolor ti ti-mobile"></i>(+01) 123 456 7890</li>
+                                    <li><i class="ttm-textcolor-skincolor ti ti-alarm-clock"></i>Mon to Sat - 9:00am to 6:00pm <br> (Sunday Closed)</li>
                                 </ul>
                             </aside>
                         </div>
                         <div class="col-lg-8 content-area">
                             <div class="ttm-service-single-content-area">
                                 <div class="ttm-service-description">
-                                    <h3>{{ $service->heading }}</h3>
-                                    <p>{{ $service->long_text }}</p>
+                                    <h3>Manufacturer of denim fabrics services</h3>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.</p>
                                     <div class="padding_top20 padding_bottom20">
                                         <div class="ttm_fatured_image-wrapper">
-                                            <img class="img-fluid" src="{{ asset($service->photo) }}" alt="{{ $service->title }}">
+                                            <img class="img-fluid" src="{{ asset('frontend/images/services/services-01-1200x800.jpg') }}" alt="services-1">
                                         </div>
                                     </div>
-                                    {{-- <div class="padding_top15 padding_bottom5">
+                                    <div class="padding_top15 padding_bottom5">
                                         <h3>The rayon fabrics wholesaler</h3>
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
                                         <div class="row">
@@ -130,17 +128,18 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> --}}
+                                    </div>
                                     <div class="padding_top30 mb_15">
-                                        <p>{{ $service->description }}</p>
+                                        <h3>Understand your business</h3>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,&nbsp;<u>when an unknown printer took a galley</u>&nbsp;of type and scrambled it to make a type specimen book.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div><!-- row end -->
+                    </div>
                 </div>
             </div>
 
 
-        </div><!--site-main end-->
+        </div>
 @endsection

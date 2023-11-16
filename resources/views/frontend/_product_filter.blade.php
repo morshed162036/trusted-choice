@@ -19,19 +19,4 @@
             @endforeach
         </ul>
     </aside>
-
-
-
-{{--    <aside class="widget contact-widget with-title">--}}
-{{--        <h3 class="widget-title">Get in touch</h3>--}}
-{{--        <ul class="contact-widget-wrapper">--}}
-{{--            <li><i class="ttm-textcolor-skincolor ti ti-location-pin"></i>{{ $settings->address }}--}}
-{{--            </li>--}}
-{{--            <li><i class="ttm-textcolor-skincolor ti ti-email"></i><a--}}
-{{--                    href="mailto:{{ $settings->email }}" target="_blank">{{ $settings->email }}</a>--}}
-{{--            </li>--}}
-{{--            <li><i class="ttm-textcolor-skincolor ti ti-mobile"></i>{{ $settings->phone }}</li>--}}
-{{--            --}}{{--                            <li><i class="ttm-textcolor-skincolor ti ti-alarm-clock"></i>Mon to Sat - 9:00am to 6:00pm <br> (Friday Closed)</li>--}}
-{{--        </ul>--}}
-{{--    </aside>--}}
 </div>

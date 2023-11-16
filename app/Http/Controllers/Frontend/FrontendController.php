@@ -20,14 +20,14 @@ class FrontendController extends Controller
     {
         $data['sliders'] = Slider::where('status', 'active')->get();
         $data['testimonials'] = Testimonial::where('status', 'active')->orderBy('rating')->get();
-        return view('frontend.homePage',$data);
+        return view('frontend.homePage', $data);
     }
     public function index()
     {
-//        dd('hi');
+        //        dd('hi');
         $data['sliders'] = Slider::where('status', 'active')->get();
         $data['testimonials'] = Testimonial::where('status', 'active')->orderBy('rating')->get();
-        return view('frontend.homePage',$data);
+        return view('frontend.homePage', $data);
     }
     public function about()
     {
@@ -47,64 +47,63 @@ class FrontendController extends Controller
     public function productsPage()
     {
         $data['productParentCategories'] = Category::tree();
-        return view('frontend.productParentPage',$data);
+        return view('frontend.productParentPage', $data);
     }
-    public function products($id,$slug="")
+    public function products($id, $slug = "")
     {
-        $data['productCategories'] = Category::where('parent_id',$id)->get();
+        $data['productCategories'] = Category::where('parent_id', $id)->get();
 
-//        $data['productParentCategories'] = Category::where('parent_id',null)->get();
-        if (count($data['productCategories'] ) > 0)
-        {
+        //        $data['productParentCategories'] = Category::where('parent_id',null)->get();
+        if (count($data['productCategories']) > 0) {
             $data['parent'] = [];
-            foreach (Category::where('parent_id',null)->get() as $cat){
-                array_push($data['parent'],$cat->id);
+            foreach (Category::where('parent_id', null)->get() as $cat) {
+                array_push($data['parent'], $cat->id);
             }
 
-            $data['productCategories'] = Category::where('parent_id',$id)->get();
-            $data['productParentCategories'] = Category::where('status','active')
-                ->where('parent_id',$id)
+            $data['productCategories'] = Category::where('parent_id', $id)->get();
+            $data['productParentCategories'] = Category::where('status', 'active')
+                ->where('parent_id', $id)
                 ->get();
-            return view('frontend.productParentPage',$data);
+            return view('frontend.productParentPage', $data);
         }
 
-        $data['productCategories'] = Category::where('parent_id',$id)->get();
-        $data['products'] = Product::where('status','active')->where('category_id',$id)->get();
+        $data['productCategories'] = Category::where('parent_id', $id)->get();
+        $data['products'] = Product::where('status', 'active')->where('category_id', $id)->get();
 
-        return view('frontend.productPage',$data);
-
-
+        return view('frontend.productPage', $data);
     }
 
     public function galleries()
     {
-        $data['galleries'] = Gallery::where('status','active')->orderBy('created_at')->get();
-        return view('frontend.galleryPage',$data);
+        $data['galleries'] = Gallery::where('status', 'active')->orderBy('created_at')->get();
+        return view('frontend.galleryPage', $data);
     }
 
     public function blogs()
     {
-        $data['blogs'] = Post::where('status','active')->paginate(30);
-        return view('frontend.blogPage',$data);
+        $data['blogs'] = Post::where('status', 'active')->paginate(30);
+        return view('frontend.blogPage', $data);
     }
 
-    public function blogDetails ($id,$slug=""){
-        $data['blog'] = Post::where('status','active')->where('id',$id)->firstOrFail();
+    public function blogDetails($id, $slug = "")
+    {
+        $data['blog'] = Post::where('status', 'active')->where('id', $id)->firstOrFail();
 
         $data['pageTitle'] =  $data['blog']->title;
         $data['categoryLists'] = PostCategory::where('status', 'active')->get();
-        $data['popularPosts'] = Post::where('status','active')->limit('3')->orderBy('created_at','DESC')->get();
-        return view('frontend.single_blog',$data);
+        $data['popularPosts'] = Post::where('status', 'active')->limit('3')->orderBy('created_at', 'DESC')->get();
+        return view('frontend.single_blog', $data);
     }
 
-    public function blogCategoryDetails($id,$slug=""){
+    public function blogCategoryDetails($id, $slug = "")
+    {
 
-        $data['blogs'] = Post::where('status','active')->where('category_id',$id)->get();
-        $pageTitle =  PostCategory::where('id',$id)->first();
+        $data['blogs'] = Post::where('status', 'active')->where('category_id', $id)->get();
+        $pageTitle =  PostCategory::where('id', $id)->first();
         $data['pageTitle'] =  $pageTitle->category_name;
         $data['categoryLists'] = PostCategory::where('status', 'active')->get();
-        $data['popularPosts'] = Post::where('status','active')->limit('3')->orderBy('created_at','DESC')->get();
-        return view('frontend.category_blog',$data);
+        $data['popularPosts'] = Post::where('status', 'active')->limit('3')->orderBy('created_at', 'DESC')->get();
+        return view('frontend.category_blog', $data);
     }
 
     public function contact()
@@ -116,14 +115,14 @@ class FrontendController extends Controller
     {
 
         $request->validate([
-            'name' => ['required','string','min:3','max:40'],
-            'email' => ['nullable','email','max:50'],
-            'phone' => ['nullable','string','min:3','max:100'],
-            'address' => ['nullable','string','min:3','max:100'],
-            'company_name' => ['nullable','string','min:3','max:80'],
-            'subject' => ['required','string','min:2','max:40'],
-            'message' => ['required','string','min:3','max:256'],
-        ],[
+            'name' => ['required', 'string', 'min:3', 'max:40'],
+            'email' => ['nullable', 'email', 'max:50'],
+            'phone' => ['nullable', 'string', 'min:3', 'max:100'],
+            'address' => ['nullable', 'string', 'min:3', 'max:100'],
+            'company_name' => ['nullable', 'string', 'min:3', 'max:80'],
+            'subject' => ['required', 'string', 'min:2', 'max:40'],
+            'message' => ['required', 'string', 'min:3', 'max:256'],
+        ], [
             'name.required' => 'Name required',
         ]);
 
@@ -137,14 +136,15 @@ class FrontendController extends Controller
         $data['type'] = 'user_contact';
 
         $contact = Contact::create($data);
-        return redirect()->back()->with('success','Successfully Submit Your Information');
+        return redirect()->back()->with('success', 'Successfully Submit Your Information');
     }
 
-    public function subscribe(Request $request){
+    public function subscribe(Request $request)
+    {
         $request->validate([
-            'name' => ['required','string','min:3','max:40'],
-            'email' => ['nullable','email','max:50'],
-        ],[
+            'name' => ['required', 'string', 'min:3', 'max:40'],
+            'email' => ['nullable', 'email', 'max:50'],
+        ], [
             'name.required' => 'Name required',
         ]);
 
@@ -153,11 +153,16 @@ class FrontendController extends Controller
         $data['type'] = 'user_subscribe';
 
         $contact = Contact::create($data);
-        return redirect()->back()->with('success-sub','Successfully Submit Your Information');
+        return redirect()->back()->with('success-sub', 'Successfully Submit Your Information');
     }
 
-    public function landingpage(){
-      return view('frontend.landing_page');
+    public function landingpage()
+    {
+        return view('frontend.landing_page');
     }
 
+    public function product_detailspage()
+    {
+        return view('frontend.productdetails');
+    }
 }

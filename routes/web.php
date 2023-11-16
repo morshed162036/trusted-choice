@@ -29,6 +29,7 @@ Route::get('user-subscribe','\App\Http\Controllers\Frontend\FrontendController@c
 Route::post('user-subscribe','\App\Http\Controllers\Frontend\FrontendController@subscribe')->name('user_subscribe.store');
 // new add
 Route::get('landing_page', '\App\Http\Controllers\Frontend\FrontendController@landingpage')->name('landing.page');
+Route::get('product_detalis', '\App\Http\Controllers\Frontend\FrontendController@product_detailspage')->name('product.details');
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
