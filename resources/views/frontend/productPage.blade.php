@@ -31,69 +31,177 @@
 <div class="site-main">
 
 
-    <div class="ttm-row sidebar ttm-sidebar-left clearfix">
+    <!--grid-section-->
+    <section class="ttm-row grid-section clearfix">
         <div class="container">
             <!-- row -->
-            <div class="row">
-                @includeIf('frontend._product_filter')
-{{--                <div class="col-lg-4 widget-area sidebar-left">--}}
-{{--                    <aside class="widget widget-nav-menu">--}}
-{{--                        <ul>--}}
-{{--                            @foreach($productCategories as $category)--}}
-{{--                                <li class=""><a href="{{ route('products',[$category->id,$category->slug]) }}"> {{ $category->category_name }} </a></li>--}}
-{{--                            @endforeach--}}
-{{--                        </ul>--}}
-{{--                    </aside>--}}
+            <div class="row mb_15 mt_15">
+                {{--  @if ($services)
+                    @foreach ($services as $service)
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <!-- featured-imagebox-portfolio -->
+                            <div class="featured-imagebox featured-imagebox-portfolio style2">
+                                <!-- ttm-box-view-overlay -->
+                                <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
+                                    <!-- featured-thumbnail -->
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid" src="{{ asset($service->photo) }}" alt="image">
+                                    </div>
+                                    <!-- featured-thumbnail end-->
+                                    <div class="ttm-media-link">
+                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="{{ $service->service_name }}" href="{{ asset($service->photo) }}" data-rel="prettyPhoto" tabindex="0">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <a href="{{ route('services.details',$service->id) }}" class="ttm_link" tabindex="0"><i class="fa fa-random"></i></a>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3><a href="{{ route('services.details',$service->id) }}"> {{ ucwords($service->service_name) }}</a></h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>{{ $service->short_text }}</p>
+                                    </div>
+                                </div>
+                            </div><!-- featured-imagebox-portfolio end-->
+                        </div>
+                    @endforeach
+                @endif  --}}
 
-{{--                    <aside class="widget contact-widget with-title">--}}
-{{--                        <h3 class="widget-title">Get in touch</h3>--}}
-{{--                        <ul class="contact-widget-wrapper">--}}
-{{--                            <li><i class="ttm-textcolor-skincolor ti ti-location-pin"></i>{{ $settings->address }}</li>--}}
-{{--                            <li><i class="ttm-textcolor-skincolor ti ti-email"></i><a href="mailto:{{ $settings->email }}" target="_blank">{{ $settings->email }}</a></li>--}}
-{{--                            <li><i class="ttm-textcolor-skincolor ti ti-mobile"></i>{{ $settings->phone }}</li>--}}
-{{--                            <li><i class="ttm-textcolor-skincolor ti ti-alarm-clock"></i>Mon to Sat - 9:00am to 6:00pm <br> (Friday Closed)</li>--}}
-{{--                        </ul>--}}
-{{--                    </aside>--}}
-{{--                </div>--}}
- <div class="col-lg-8 content-area">
-                    <a class="btn btn-primary" href="{{ url()->previous() }}">Back</a> <br> <br>
-                    <span>
-                            <strong>
-                                {{ request()->segment(2) ? \App\Models\Category::categoryFullName(request()->segment(2) ):'' }}
-                            </strong>
-                        </span>
-                    <div class="row">
-                             @if(count($products) > 0)
-                                 
-                                    @foreach($products as $product)
-                                         <div class="col-lg-4 col-md-4 col-sm-4">
-                                            <div class="featured-imagebox featured-imagebox-team style1">
-                                                <div class="ttm-team-box-view-overlay">
-                                                    <div class="featured-thumbnail">
-                                                    
-
-                                                      <img class="img-fluid" src="{{ asset($product->photo) }}" alt="image">
-                                                    </div>
-                                                </div>
-                                            <div class="featured-content">
-                                                <div class="featured-title">
-                                                    <h5>{{ ucwords($product->title) }}</h5>
-                                                
-                                                </div>
-                                                <p class="team-position">{!! $product->description_part1 !!}  </p>
-                                                </div>
-                                            </div>
-                                         </div>
-                                    @endforeach
-                                
-                             @else
-                                 <p>No Product Found</p>
-                             @endif
-                    </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <!-- featured-imagebox-portfolio -->
+                    <div class="featured-imagebox featured-imagebox-portfolio style2">
+                        <!-- ttm-box-view-overlay -->
+                        <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
+                            <!-- featured-thumbnail -->
+                            <div class="featured-thumbnail">
+                                <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/services/service-1.jfif')}}" alt="image"></a>
+                            </div><!-- featured-thumbnail end-->
+                            <div class="ttm-media-link">
+                                <a class="ttm_prettyphoto ttm_image" title="Cotton Fabric" data-rel="prettyPhoto" href="images/portfolio/portfolio-02-1200x800.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="{{ route('services.details') }}" class="ttm_link"><i class="fa fa-random"></i></a>
+                            </div>
+                        </div><!-- ttm-box-view-overlay end-->
+                        <div class="featured-content">
+                            <div class="featured-title">
+                                <h3><a href="{{ route('services.details') }}">Excuistie leather patch</a></h3>
+                            </div>
+                            <div class="featured-desc">
+                                <p>Molestie a iaculis at erat. Varius vel pharetra vel turpis. Ac turpis egestas integer aliquet.</p>
+                            </div>
+                        </div>
+                    </div><!-- featured-imagebox-portfolio -->
                 </div>
-            </div><!-- row end -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <!-- featured-imagebox-portfolio -->
+                    <div class="featured-imagebox featured-imagebox-portfolio style2">
+                        <!-- ttm-box-view-overlay -->
+                        <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
+                            <!-- featured-thumbnail -->
+                            <div class="featured-thumbnail">
+                                <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/services/services-2.jfif')}}" alt="image"></a>
+                            </div><!-- featured-thumbnail end-->
+                            <div class="ttm-media-link">
+                                <a class="ttm_prettyphoto ttm_image" title="Leather Material" data-rel="prettyPhoto" href="images/portfolio/portfolio-03-1200x800.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="{{ route('services.details') }}" class="ttm_link"><i class="fa fa-random"></i></a>
+                            </div>
+                        </div><!-- ttm-box-view-overlay end-->
+                        <div class="featured-content">
+                            <div class="featured-title">
+                                <h3><a href="{{ route('services.details') }}">Fashion Forward jacquard elastic</a></h3>
+                            </div>
+                            <div class="featured-desc">
+                                <p>Augue eget arcu dictum varius duis at consectetur. A diam sollicitudin tempor id eu nisl nunc mi ipsum.</p>
+                            </div>
+                        </div>
+                    </div><!-- featured-imagebox-portfolio -->
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <!-- featured-imagebox-portfolio -->
+                    <div class="featured-imagebox featured-imagebox-portfolio style2">
+                        <!-- ttm-box-view-overlay -->
+                        <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
+                            <!-- featured-thumbnail -->
+                            <div class="featured-thumbnail">
+                                <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/services/services-3.jfif')}}" alt="image"></a>
+                            </div><!-- featured-thumbnail end-->
+                            <div class="ttm-media-link">
+                                <a class="ttm_prettyphoto ttm_image" title="Georgette Fabric" data-rel="prettyPhoto" href="images/portfolio/portfolio-04-1200x800.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="{{ route('services.details') }}" class="ttm_link"><i class="fa fa-random"></i></a>
+                            </div>
+                        </div><!-- ttm-box-view-overlay end-->
+                        <div class="featured-content">
+                            <div class="featured-title">
+                                <h3><a href="{{ route('services.details') }}">Distinactive print label</a></h3>
+                            </div>
+                            <div class="featured-desc">
+                                <p>Varius sit amet mattis vulputate enim nulla. Viverra maecenas accumsan lacus vel facilisis.</p>
+                            </div>
+                        </div>
+                    </div><!-- featured-imagebox-portfolio -->
+                </div>
+                {{--  <div class="col-lg-4 col-md-4 col-sm-6">
+                    <!-- featured-imagebox-portfolio -->
+                    <div class="featured-imagebox featured-imagebox-portfolio style2">
+                        <!-- ttm-box-view-overlay -->
+                        <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
+                            <!-- featured-thumbnail -->
+                            <div class="featured-thumbnail">
+                                <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/portfolio/portfolio-05-768x512.jpg')}}" alt="image"></a>
+                            </div><!-- featured-thumbnail end-->
+                            <div class="ttm-media-link">
+                                <a class="ttm_prettyphoto ttm_image" title="Wool Fabric" data-rel="prettyPhoto" href="images/portfolio/portfolio-05-1200x800.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="{{ route('services.details') }}" class="ttm_link"><i class="fa fa-random"></i></a>
+                            </div>
+                        </div><!-- ttm-box-view-overlay end-->
+                        <div class="featured-content">
+                            <div class="featured-title">
+                                <h3><a href="{{ route('services.details') }}">Wool Fabric</a></h3>
+                            </div>
+                            <div class="featured-desc">
+                                <p>Neque convallis a cras semper auctor neque tempus. Tortor consequat venenatis crasor.</p>
+                            </div>
+                        </div>
+                    </div><!-- featured-imagebox-portfolio -->
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <!-- featured-imagebox-portfolio -->
+                    <div class="featured-imagebox featured-imagebox-portfolio style2">
+                        <!-- ttm-box-view-overlay -->
+                        <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
+                            <!-- featured-thumbnail -->
+                            <div class="featured-thumbnail">
+                                <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/portfolio/portfolio-06-768x512.jpg')}}" alt="image"></a>
+                            </div><!-- featured-thumbnail end -->
+                            <div class="ttm-media-link">
+                                <a class="ttm_prettyphoto ttm_image" title="Linen Fabric" data-rel="prettyPhoto" href="images/portfolio/portfolio-06-1200x800.jpg">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="{{ route('services.details') }}" class="ttm_link"><i class="fa fa-random"></i></a>
+                            </div>
+                        </div><!-- ttm-box-view-overlay end-->
+                        <div class="featured-content">
+                            <div class="featured-title">
+                                <h3><a href="{{ route('services.details') }}">Linen Fabric</a></h3>
+                            </div>
+                            <div class="featured-desc">
+                                <p>Varius sit amet mattis vulputate enim nulla. Viverra maecenas accumsan facilisis.</p>
+                            </div>
+                        </div>
+                    </div><!-- featured-imagebox-portfolio -->
+                </div>  --}}
+            </div>
         </div>
-    </div>
+    </section>
+    <!--grid-section end-->
 
 
 </div><!--site-main end-->

@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <div class="ttm_single_image-wrapper text-left">
-                            <img class="img-fluid" src="{{ asset('frontend') }}/images/single-img-09.png"
+                            <img class="img-fluid" src="{{ asset('frontend') }}/images/who_we_are.jfif"
                                  alt="single-09">
                         </div>
                     </div>
@@ -49,15 +49,15 @@
                                     <h2 class="title">An Ultimate Trusted Choice Brand in <b>Market  </b></h2>
                                 </div>
                                 <div class="title-desc">
-                                    <p>TRUSTED CHOICE, F&F      ACCESSORIES is committed to 
-                                        serve our buyers with a wide range of quality garments 
-                                        accessories within the agreed time. Our motto is to pay 
-                                        highest level of attention to follow the advice of our 
-                                        buyers in terms of competitive price & timely delivery 
+                                    <p>TRUSTED CHOICE, F&F      ACCESSORIES is committed to
+                                        serve our buyers with a wide range of quality garments
+                                        accessories within the agreed time. Our motto is to pay
+                                        highest level of attention to follow the advice of our
+                                        buyers in terms of competitive price & timely delivery
                                         which result to make our buyer satisfy and happy.
-                                        Our goal is not only to satisfy our individual's buyer but 
-                                        also to flourish the image of Bangladeshi brand to rest of 
-                                        the world. That is why we never compromise with the 
+                                        Our goal is not only to satisfy our individuals buyer but
+                                        also to flourish the image of Bangladeshi brand to rest of
+                                        the world. That is why we never compromise with the
                                         qualit</p>
                                 </div>
                             </div><!-- section title end -->
@@ -164,117 +164,7 @@
 
 
         <!--services-section-->
-        <section class="ttm-row services-section ttm-bgcolor-grey clearfix">
-            <div class="container">
-               <div class="row">
-{{--                    <div class="col-lg-12">--}}
-{{--                        <div class="padding_top75 res-991-padding_top0"></div>--}}
-{{--                        <!-- section title -->--}}
-{{--                        <div class="section-title title-style-center_text">--}}
-{{--                            <div class="title-header">--}}
-{{--                                <h3>BUSINESS GROW</h3>--}}
-{{--                                <h2 class="title">Your Business <b>Grow & Successful </b></h2>--}}
-{{--                            </div>--}}
-{{--                        </div><!-- section title end -->--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-                <!-- row -->
-{{--                <div class="row slick_slider mb_15  "--}}
-{{--                     data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "arrows":false, "autoplay":false, "dots":false, "infinite":true, "responsive":[{"breakpoint":992,"settings":{"slidesToShow": 2}},{"breakpoint":840,"settings":{"slidesToShow": 2}},{"breakpoint":650,"settings":{"slidesToShow": 1}}]}'>--}}
-{{--                    <div class="col-md-4 col-sm-6">--}}
-{{--                        <!--featured-imagebox-->--}}
-{{--                        <div class="featured-imagebox featured-imagebox-services style1">--}}
-{{--                            <!-- featured-thumbnail -->--}}
-{{--                            <div class="featured-thumbnail">--}}
-{{--                                <img class="img-fluid"--}}
-{{--                                     src="{{ asset('frontend') }}/images/services/services-01-768x512.jpg" alt="image">--}}
-{{--                            </div><!-- featured-thumbnail end-->--}}
-{{--                            <div class="featured-content">--}}
-{{--                                <div class="featured-title">--}}
-{{--                                    <h3><a href="fabric-printing.html">Fabric Printing</a></h3>--}}
-{{--                                    <div class="ttm-details-link">--}}
-{{--                                        <a href="fabric-printing.html"><i--}}
-{{--                                                class="themifyicon ti-arrow-top-right"></i></a>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="featured-desc">--}}
-{{--                                    <p>Have been engaged with modern units for all requirements of continuous--}}
-{{--                                        bleach.</p>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div><!-- featured-imagebox end-->--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-4 col-sm-6">--}}
-{{--                        <!--featured-imagebox-->--}}
-{{--                        <div class="featured-imagebox featured-imagebox-services style1">--}}
-{{--                            <!-- featured-thumbnail -->--}}
-{{--                            <div class="featured-thumbnail">--}}
-{{--                                <img class="img-fluid"--}}
-{{--                                     src="{{ asset('frontend') }}/images/services/services-02-768x512.jpg" alt="image">--}}
-{{--                            </div><!-- featured-thumbnail end-->--}}
-{{--                            <div class="featured-content">--}}
-{{--                                <div class="featured-title">--}}
-{{--                                    <h3><a href="fabric-dyeing.html">Fabric Dyeing</a></h3>--}}
-{{--                                    <div class="ttm-details-link">--}}
-{{--                                        <a href="fabric-dyeing.html"><i class="themifyicon ti-arrow-top-right"></i></a>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="featured-desc">--}}
-{{--                                    <p>It is the process of transfer dyes from the aqueous solution to the fiber--}}
-{{--                                        surface</p>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div><!-- featured-imagebox end-->--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-4 col-sm-6">--}}
-{{--                        <!--featured-imagebox-->--}}
-{{--                        <div class="featured-imagebox featured-imagebox-services style1">--}}
-{{--                            <!-- featured-thumbnail -->--}}
-{{--                            <div class="featured-thumbnail">--}}
-{{--                                <img class="img-fluid"--}}
-{{--                                     src="{{ asset('frontend') }}/images/services/services-03-768x512.jpg" alt="image">--}}
-{{--                            </div><!-- featured-thumbnail end-->--}}
-{{--                            <div class="featured-content">--}}
-{{--                                <div class="featured-title">--}}
-{{--                                    <h3><a href="engineering.html">Engineering</a></h3>--}}
-{{--                                    <div class="ttm-details-link">--}}
-{{--                                        <a href="engineering.html"><i class="themifyicon ti-arrow-top-right"></i></a>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="featured-desc">--}}
-{{--                                    <p>Choose from many fabrics and design your. Create and print only the fabric you--}}
-{{--                                        need.</p>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div><!-- featured-imagebox end-->--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-4 col-sm-6">--}}
-{{--                        <!--featured-imagebox-->--}}
-{{--                        <div class="featured-imagebox featured-imagebox-services style1">--}}
-{{--                            <!-- featured-thumbnail -->--}}
-{{--                            <div class="featured-thumbnail">--}}
-{{--                                <img class="img-fluid"--}}
-{{--                                     src="{{ asset('frontend') }}/images/services/services-04-768x512.jpg" alt="image">--}}
-{{--                            </div><!-- featured-thumbnail end-->--}}
-{{--                            <div class="featured-content">--}}
-{{--                                <div class="featured-title">--}}
-{{--                                    <h3><a href="manufacture.html">Manufacture</a></h3>--}}
-{{--                                    <div class="ttm-details-link">--}}
-{{--                                        <a href="manufacture.html"><i class="themifyicon ti-arrow-top-right"></i></a>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="featured-desc">--}}
-{{--                                    <p>Choose from many fabrics and design your. Create and print only the fabric you--}}
-{{--                                        need.</p>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div><!-- featured-imagebox end-->--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-                <!-- row end -->
-            </div>
-        </section>
-        <!--services-section end -->
+
 
 
         <!--padding_zero-section -->
@@ -290,7 +180,7 @@
                             <div class="layer-content">
                                 <div class="slick_slider"
                                      data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "arrows":false, "autoplay":false, "dots":false, "infinite":true, "responsive":[{"breakpoint":992,"settings":{"slidesToShow": 1}},{"breakpoint":840,"settings":{"slidesToShow": 1}}]}'>
-                                   
+
                                     @foreach(\App\Models\Testimonial::where('status','active')->get() as $testimonial)
                                     <div class="testimonials ttm-testimonial-box-view-style3">
                                         <div class="testimonial-content">
@@ -334,10 +224,10 @@
         <!--blog-section-->
         {{-- <section class="ttm-row blog-section margin_top90 res-991-margin_top0 clearfix">
             <div class="container">
-             
+
                 <div class="row">
                     <div class="col-lg-12">
-                        
+
                         <div class="section-title style2">
                             <div class="title-header">
                                 <h3>LATEST BLOGS</h3>
@@ -355,14 +245,14 @@
 
                     @foreach(\App\Models\Post::where('status','active')->limit(6)->get() as $blog)
                     <div class="col-lg-4">
-                   
+
                         <div class="featured-imagebox featured-imagebox-post style1">
                             <div class="featured-thumbnail">
                                 <img class="img-fluid" src="{{ asset($blog->featured_photo) }}"
                                      alt="">
                             </div>
                             <div class="featured-content">
-                               
+
                                 <div class="ttm-box-post-date">
                                     <span class="ttm-entry-date">
                                         <time class="entry-date" datetime="2021-02-15T04:15:25+00:00">15<span

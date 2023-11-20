@@ -135,7 +135,7 @@
                                     </div>
                                     <div class="col-lg-5">
                                         <div class="ttm_single_image-wrapper text-lg-right">
-                                            <img class="img-fluid auto_size" width="381" height="531" src="{{ asset('frontend') }}/images/single-img-05.jpg" alt="single-05">
+                                            <img class="img-fluid auto_size" width="381" height="531" src="{{ asset('frontend') }}/images/amazing_garments_accssories.jfif" alt="amazing_garments_accssories">
                                         </div>
                                     </div>
                                 </div>
@@ -154,8 +154,8 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
                         <div class="ttm_single_image-wrapper imagestyle-three">
-                            <div class="ttm_single_image_text ttm-bgcolor-skincolor">{{ date('Y')-2010 }} Years Of Experience!</div>
-                            <img class="img-fluid auto_size" src="{{ asset('frontend') }}/images/single-img-06.jpg" alt="single-06" height="615" width="542">
+                            {{--  <div class="ttm_single_image_text ttm-bgcolor-skincolor">{{ date('Y')-2010 }} Years Of Experience!</div>  --}}
+                            <img class="img-fluid auto_size" src="{{ asset('frontend') }}/images/our_trusted_choice.jfif" alt="single-06" height="615" width="542">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-xs-12">

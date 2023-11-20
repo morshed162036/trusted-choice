@@ -13,9 +13,9 @@
         <li class="mega-menu-item @yield('products')">
             <a href="{{ route('products.all') }}" class="mega-menu-link">Product</a>
             <ul class="mega-submenu">
-                @foreach($categories as $category)
+                {{--  @foreach($categories as $category)
                     <li><a href="{{ route('products',[$category->id,$category->slug]) }}">{{ $category->category_name }}</a></li>
-                @endforeach
+                @endforeach  --}}
             </ul>
         </li>
         <li class="mega-menu-item @yield('services')">

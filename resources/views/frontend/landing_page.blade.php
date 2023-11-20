@@ -187,52 +187,57 @@
 
 
              {{--  about section start  --}}
-                <section class="ttm-row about-section clearfix" id="About">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-8 col-sm-8">
-                            <div class="ttm_single_image-wrapper">
-                                <img class="img-fluid auto_size" width="569" height="655" src="{{ asset('frontend') }}/images/single-img-03.png" alt="single-03">
-                            </div>
+                 <!--about-section-->
+        <section class="ttm-row about-section clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="ttm_single_image-wrapper text-left">
+                            <img class="img-fluid" src="{{ asset('frontend') }}/images/who_we_are.jfif"
+                                 alt="single-09">
                         </div>
-                        <div class="col-lg-6 col-md-12 col-xs-12">
-                            <div class="margin_top40">
-                                <!-- section title -->
-                                <div class="section-title">
-                                    <div class="title-header">
-                                        <h3>Short About us</h3>
-                                        <h2 class="title">Elevate Your Style with Trusted Choice: <b>Crafting Fashion, Creating Trends</b></h2>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-xs-12">
+                        <div class="padding_top20 res-991-padding_top40">
+                            <!-- section title -->
+                            <div class="section-title">
+                                <div class="title-header">
+                                    <h3> Short About us</h3>
+                                    <h2 class="title">An Ultimate Trusted Choice Brand in <b>Market  </b></h2>
+                                </div>
+                                <div class="title-desc">
+                                    <p>TRUSTED CHOICE, F&F      ACCESSORIES is committed to
+                                        serve our buyers with a wide range of quality garments
+                                        accessories within the agreed time. Our motto is to pay
+                                        highest level of attention to follow the advice of our
+                                        buyers in terms of competitive price & timely delivery
+                                        which result to make our buyer satisfy and happy.
+                                        Our goal is not only to satisfy our individuals buyer but
+                                        also to flourish the image of Bangladeshi brand to rest of
+                                        the world. That is why we never compromise with the
+                                        qualit</p>
+                                </div>
+                            </div><!-- section title end -->
+                            <div class="ttm-highlight-quote margin_top35 clearfix">
+                                <blockquote class=" ttm-bgcolor-grey"><p>No Matter What Problem You face You Have Found
+                                        An Investigation Agency That Can Help You.</p></blockquote>
+                                <div class="d-flex align-items-center">
+                                    <div class="d-inline-block">
+                                        <img class="img-fluid auto_size" width="90" height="89"
+                                             src="{{ asset('frontend') }}/images/trusted-choice-ceo.PNG" alt="author-quote">
                                     </div>
-                                    <div class="title-desc">
-                                        <p>Welcome to Trusted Choice, where we redefine the world of garment accessories. Located in the vibrant heart of Dhaka, our iconic store in Wiltshire is more than a destination; its a journey into the artistry of fashion. Discover a curated collection of accessories that transcend trends, reflecting our unwavering commitment to quality and innovation.</p>
+                                    <div class="d-inline-block padding_left30">
+                                        <h2 class="fs-20 mb-0">Kazi Nazmul Alam</h2>
+                                        <label>Proprietor</label>
                                     </div>
                                 </div>
-                                <!-- section title end -->
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <ul class="ttm-list ttm-bordered-lists ttm-list-style-icon ttm-list-icon-color-skincolor ttm-textcolor-darkgrey">
-                                            <li><i class="ti ti-check"></i><span class="ttm-list-li-content">Comprehensive Selection</span></li>
-                                            <li><i class="ti ti-check"></i><span class="ttm-list-li-content">Tailored Excellence</span></li>
-                                            <li><i class="ti ti-check"></i><span class="ttm-list-li-content">Global Quality, Local Craftsmanship:</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <ul class="ttm-list ttm-bordered-lists ttm-list-style-icon ttm-list-icon-color-skincolor ttm-textcolor-darkgrey">
-                                            <li><i class="ti ti-check"></i><span class="ttm-list-li-content">Timely Delivery, Uncompromised Quality</span></li>
-                                            <li><i class="ti ti-check"></i><span class="ttm-list-li-content">Eco-Friendly Innovations</span></li>
-                                            <li><i class="ti ti-check"></i><span class="ttm-list-li-content">Global Recognition, Local Expertise</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                {{--  <div class="margin_top35 res-767-margin_top20">
-                                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-fill ttm-btn-color-skincolor margin_right20 margin_top15" href="about-us-2.html">view more</a>
-                                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-dark  margin_top15" href="contact-us.html">contact us</a>
-                                </div>  --}}
                             </div>
                         </div>
-                    </div><!-- row end -->
-                </div>
-            </section>
+                    </div>
+                </div><!-- row end -->
+            </div>
+        </section>
+        <!--about-section end-->
              {{--  about section end  --}}
 
    {{--  our prduct start  --}}
@@ -428,10 +433,10 @@
                                 </div>
                             </div></div>
                         </div>
-                                               
+
 
                         <div class="col-lg-7">
-                             
+
                             <div class="row ttm-vertical_sep">
                                 <div class="col-md-6 col-sm-6">
                                     <!--featured-icon-box-->
