@@ -12,7 +12,7 @@
 }
 
 @media only screen and (min-width: 1200px){
-	
+
 	/* header */
 	.ttm-stickable-header.fixed-header {
 		z-index: 4;
@@ -26,7 +26,7 @@
 	    width: 100%;
 	    z-index: 9;
 	}
-	#site-header-menu .ttm-stickable-header.fixed-header .site-navigation ul.menu > li >a { 
+	#site-header-menu .ttm-stickable-header.fixed-header .site-navigation ul.menu > li >a {
 		padding: 33px 17px ;
 	}
 
@@ -43,7 +43,7 @@
 	    top: 40px;
 	    z-index: 2;
 	    padding: 0 30px;
-	    background-color: #fff;
+	    background-color: #f8f8f8;
 	    -webkit-box-shadow: 0px 0px 9px 0px rgb(0 0 0 / 11%);
 	    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.11);
 	    box-shadow: 0px 0px 9px 0px rgb(0 0 0 / 11%);
@@ -67,9 +67,9 @@
 	    border: none;
 	    background-color: #f8f8f8;
 	}
-	
+
 	.ttm-header-style-03 .top_bar_contact_item:last-child { padding-right: 18px; }
-	.ttm-header-style-03 #site-header-menu .site-navigation ul.menu > li >a { 
+	.ttm-header-style-03 #site-header-menu .site-navigation ul.menu > li >a {
 		padding: 42px 15px 43px 15px;
 		position: relative;
 	}
@@ -111,7 +111,7 @@
 	.res-1199-margin_top50 { margin-top: 50px !important; }
 
 	.top_bar, .side-menu-container, .ttm-header-style-03 .social-icons { display: none; }
-	
+
 	/* Header */
 	header .container{ max-width: 100%; }
 	.header_extra , .widget_info{ display: none !important; visibility: hidden; }
@@ -143,7 +143,7 @@
 
 	.ttm-vertical_sep > [class*='col-xl']:not(:last-child):before { content: unset; }
 	.procedure-row:before { content: unset; }
-	
+
 }
 
 @media (min-width: 992px){
@@ -198,7 +198,7 @@
 
 	.row > [class*='col-']:nth-child(odd) .featured-imagebox-procedure,
 	.featured-imagebox-procedure  { margin-top: 20px; margin-bottom: 0; }
-	
+
 
 	/* ttm-row */
 	body .page.ttm-sidebar-true .site-main,	.ttm-row { padding: 60px 0 !important; }
@@ -287,7 +287,7 @@
 
 	.res-991-margin_top_15 { margin-top: -15px !important; }
 	.res-991-margin_top_20 { margin-top: -20px !important; }
-	.res-991-margin_top_30 { margin-top: -30px !important; }	
+	.res-991-margin_top_30 { margin-top: -30px !important; }
 
 
 	.res-991-margin_bottom0{ margin-bottom: 0 !important; }
@@ -297,7 +297,7 @@
 	.res-991-margin_bottom25{ margin-bottom: 25px !important; }
 	.res-991-margin_bottom30{ margin-bottom: 30px !important; }
 	.res-991-margin_bottom50 { margin-bottom: 50px !important; }
-	.res-991-margin_bottom60 { margin-bottom: 60px !important; }	
+	.res-991-margin_bottom60 { margin-bottom: 60px !important; }
 
 	.res-991-mb_15{ margin-bottom: -15px !important; }
 	.res-991-mb_20{ margin-bottom: -20px !important; }
@@ -344,11 +344,11 @@
 
 
 	.newsletter_widget .newsletter-form input { width: 47.8%; float: none; margin: 0 5px; }
-	.newsletter_widget .newsletter-form button[type="submit"] { 
-		position: unset; 
-		float: none; 
+	.newsletter_widget .newsletter-form button[type="submit"] {
+		position: unset;
+		float: none;
 		margin: 0 auto;
-		margin-top: 10px; 
+		margin-top: 10px;
 		text-align: center;
 	}
 
@@ -368,7 +368,7 @@
     	line-height: 30px;
 	}
 
-	.slick-active.slick-current .testimonials.ttm-testimonial-box-view-style2 .testimonial-content blockquote:before { 
+	.slick-active.slick-current .testimonials.ttm-testimonial-box-view-style2 .testimonial-content blockquote:before {
 		color: #000;
 		opacity:.06;
 	}
@@ -417,7 +417,7 @@
 	[class*='col-md'] .ttm-equal-height-image  { display: block; }
 
 	/* ttm-bg-layer */
-	[class*='col-md'] .ttm-col-bgimage-yes, 
+	[class*='col-md'] .ttm-col-bgimage-yes,
 	.bg-layer-equal-height [class*='col-md'] .ttm-col-bgcolor-yes{ height: auto !important; }
 
 	.section-title.title-style-center_text .title-desc p { width: 100%; }
@@ -429,7 +429,7 @@
 
 	.slick_slider .slick-arrow, .slick_slider .slick-dot { display: none; visibility: hidden; }
 
-	
+
 }
 
 
@@ -477,7 +477,7 @@
 	.ttm-blog-single .ttm-blogbox-desc-footer .ttm-social-share-wrapper { padding-bottom: 30px; }
 
 	.comments-area .comment-form .comment-form-author,
-	.comments-area .comment-form .comment-form-email, 
+	.comments-area .comment-form .comment-form-email,
 	.comments-area .comment-form .comment-form-url {
 	    width: 100%;
 	    margin-right: 0;

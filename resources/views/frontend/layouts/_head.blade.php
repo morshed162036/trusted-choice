@@ -9,7 +9,7 @@
 <title>@yield('title') - {{ config('app.name', 'TrustedChoicebd.com') }}</title>
 
 @if(!empty($settings->favicon))
-    <link rel="icon" href="{{ asset($settings->favicon) }}" type="image/x-icon">
+    {{-- <link rel="icon" href="{{ asset($settings->favicon) }}" type="image/x-icon"> --}}
 @else
 <link rel="shortcut icon" href="{{asset('frontend/images/favicon.png')}}" />
 @endif
@@ -24,3 +24,4 @@
 <link rel="stylesheet" type="text/css" href="{{asset('frontend/css/main.css')}}"/>
 <link rel="stylesheet" type="text/css" href="{{asset('frontend/css/megamenu.css')}}"/>
 <link rel="stylesheet" type="text/css" href="{{asset('frontend/css/responsive.css')}}"/>
+<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/custom.css')}}"/>

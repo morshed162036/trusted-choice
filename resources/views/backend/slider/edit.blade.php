@@ -53,54 +53,7 @@
                                                     @enderror
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label>Slider Title </label>
-                                                <div class="controls position-relative has-icon-left">
-                                                    <input type="text" name="title" class="form-control" value="{{ old('title',isset($slider->title)?ucwords($slider->title):null) }}"  placeholder="Slider Title">
-                                                    <div class="form-control-position">
-                                                        <i class="bx bx-user"></i>
-                                                    </div>
-                                                    @error('title')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Slider Sub Title </label>
-                                                <div class="controls position-relative has-icon-left">
-                                                    <input type="text" name="sub_title" class="form-control" value="{{ old('sub_title',isset($slider->sub_title)?ucwords($slider->sub_title):null) }}"  placeholder="Slider Sub Title">
-                                                    <div class="form-control-position">
-                                                        <i class="bx bx-user"></i>
-                                                    </div>
-                                                    @error('sub_title')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Button Name</label>
-                                                <div class="controls position-relative has-icon-left">
-                                                    <input type="text" name="button_name" class="form-control" value="{{ old('button_name',isset($slider->button_name)?ucwords($slider->button_name):null) }}"  placeholder="Button Name">
-                                                    <div class="form-control-position">
-                                                        <i class="bx bx-user"></i>
-                                                    </div>
-                                                    @error('button_name')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Button URL</label>
-                                                <div class="controls position-relative has-icon-left">
-                                                    <input type="text" name="button_url" class="form-control" value="{{ old('button_url',isset($slider->button_url)?ucwords($slider->button_url):null) }}"  placeholder="Button Url">
-                                                    <div class="form-control-position">
-                                                        <i class="bx bx-user"></i>
-                                                    </div>
-                                                    @error('button_url')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
-                                            </div>
+                                            
 
                                             <div class="form-group">
                                                 <label>Published *</label>
@@ -127,18 +80,7 @@
                                                     @enderror
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label>Video URL</label>
-                                                <div class="controls position-relative has-icon-left">
-                                                    <input type="text" name="video_url" class="form-control" value="{{ old('video_url',isset($slider->video_url)?$slider->video_url:null) }}"  placeholder="Video URL">
-                                                    <div class="form-control-position">
-                                                        <i class="bx bx-user"></i>
-                                                    </div>
-                                                    @error('video_url')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
-                                            </div>
+                                           
 
                                             <div class="form-group">
                                                 <label>Slider Photo</label>

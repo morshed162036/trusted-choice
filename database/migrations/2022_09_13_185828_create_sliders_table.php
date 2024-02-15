@@ -16,15 +16,8 @@ return new class extends Migration
         Schema::create('sliders', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('title')->nullable();
-            $table->string('sub_title')->nullable();
-            $table->string('button_name')->nullable();
-            $table->string('button_url')->nullable();
             $table->double('position')->nullable();
-
             $table->text('slider_photo')->nullable();
-            $table->text('video_url')->nullable();;
-
             $table->string('status')->default('active');
             $table->timestamps();
         });

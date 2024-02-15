@@ -18,7 +18,7 @@
  .. Isotope
  .. Prettyphoto
  .. Slick_slider
- .. Back to top 
+ .. Back to top
 
  =============== */
 
@@ -40,8 +40,8 @@ $(document).ready(function(e) {
 /*------------------------------------------------------------------------------*/
 /* header_search
 /*------------------------------------------------------------------------------*/
-            
-    $(".header_search").each(function(){  
+
+    $(".header_search").each(function(){
         $(".search_btn", this).on("click", function(e){
             e.preventDefault();
             $(".header_search_content").toggleClass("on");
@@ -50,16 +50,16 @@ $(document).ready(function(e) {
         $(".header_search_content_inner .close_btn").on("click", function(e){
             e.preventDefault();
             $(".header_search_content").removeClass("on");
-        });  
+        });
     });
 
- 
+
 /*------------------------------------------------------------------------------*/
 /* Fixed-header
 /*------------------------------------------------------------------------------*/
 
     $(window).on("scroll",function(){
-        if ( matchMedia( 'only screen and (min-width: 1200px)' ).matches ) 
+        if ( matchMedia( 'only screen and (min-width: 1200px)' ).matches )
         {
             if ($(window).scrollTop() >= 50 ) {
 
@@ -76,7 +76,7 @@ $(document).ready(function(e) {
 /*------------------------------------------------------------------------------*/
 /* Menu
 /*------------------------------------------------------------------------------*/
-        
+
         var menu = {
         initialize: function() {
             this.Menuhover();
@@ -88,18 +88,18 @@ $(document).ready(function(e) {
                 getHeight = $(window).height(),
                 getIn = getNav.find("ul.menu").data("in"),
                 getOut = getNav.find("ul.menu").data("out");
-            
+
             if ( matchMedia( 'only screen and (max-width: 1200px)' ).matches ) {
-                                                     
+
                 // Enable click event
                 $("nav.main-menu ul.menu").each(function(){
-                    
+
                     // Dropdown Fade Toggle
                     $("a.mega-menu-link", this).on('click', function (e) {
                         e.preventDefault();
                         var t = $(this);
                         t.toggleClass('active').next('ul').toggleClass('active');
-                    });   
+                    });
 
                     // Megamenu style
                     $(".megamenu-fw", this).each(function(){
@@ -110,23 +110,23 @@ $(document).ready(function(e) {
                                 $(this).closest(".col-menu").toggleClass("active");
                                 return false;
                                 e.preventDefault();
-                                
+
                             });
 
                         });
-                    });  
-                    
-                }); 
+                    });
+
+                });
             }
         },
     };
 
-    
+
     $('.btn-show-menu-mobile').on('click', function(e){
-        $(this).toggleClass('is-active'); 
-        $('.menu-mobile').toggleClass('show'); 
+        $(this).toggleClass('is-active');
+        $('.menu-mobile').toggleClass('show');
         return false;
-        e.preventDefault();  
+        e.preventDefault();
     });
 
     // Initialize
@@ -136,7 +136,7 @@ $(document).ready(function(e) {
     });
 
 
-    
+
     var $bannerSlider = jQuery('.banner_slider');
     var $bannerFirstSlide = $('div.slide:first-child');
 
@@ -166,14 +166,24 @@ $(document).ready(function(e) {
         },
         {
             breakpoint: 767,
-                settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,                
-                autoplay: false,
-                autoplaySpeed: 4000,
-                swipe: true } 
-            }] });
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            swipe: true }
+      },
+     {
+        breakpoint: 400,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            swipe: true }
+      },] });
 
     function slideanimate(elements) {
       var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
@@ -190,17 +200,17 @@ $(document).ready(function(e) {
         });
       });
     }
- 
+
 
 /*------------------------------------------------------------------------------*/
 /* Animation on scroll: Number rotator
 /*------------------------------------------------------------------------------*/
-    
+
     $("[data-appear-animation]").each(function() {
     var self      = $(this);
     var animation = self.data("appear-animation");
     var delay     = (self.data("appear-animation-delay") ? self.data("appear-animation-delay") : 0);
-        
+
         if( $(window).width() > 959 ) {
             self.html('0');
             self.waypoint(function(direction) {
@@ -228,11 +238,11 @@ $(document).ready(function(e) {
     });
 
 
-   
+
 /*------------------------------------------------------------------------------*/
 /* Skillbar
 /*------------------------------------------------------------------------------*/
-    
+
     $('.ttm-progress-bar').each(function() {
         $(this).find('.progress-bar').width(0);
     });
@@ -270,17 +280,17 @@ $(document).ready(function(e) {
 
 /*------------------------------------------------------------------------------*/
 /* Tab
-/*------------------------------------------------------------------------------*/ 
+/*------------------------------------------------------------------------------*/
 
-    $('.ttm-tabs > .tabs').children('li').on('click', function(e) {  
+    $('.ttm-tabs > .tabs').children('li').on('click', function(e) {
 
-        var tab = $(this).closest('.ttm-tabs > .tabs > .tab'), 
+        var tab = $(this).closest('.ttm-tabs > .tabs > .tab'),
 
         index = $(this).closest('.ttm-tabs > .tabs > li').index();
 
-        $(this).parents('.ttm-tabs').children('.tabs').children('li.active ').removeClass('active'); 
+        $(this).parents('.ttm-tabs').children('.tabs').children('li.active ').removeClass('active');
 
-        $(this).addClass('active'); 
+        $(this).addClass('active');
         $(this).addClass('active').parents('.ttm-tabs').children('.content-tab').find('.content-inner').not('.content-inner:eq(' + index + ')').slideUp();
         $(this).addClass('active').parents('.ttm-tabs').children('.content-tab').find('.content-inner:eq(' + index + ')').slideDown();
 
@@ -302,7 +312,7 @@ $(document).ready(function(e) {
 
         if ($this.next().hasClass('show')) {
 
-            $this.next().removeClass('show');   
+            $this.next().removeClass('show');
             $this.next().slideUp('easeInExpo');
 
         } else {
@@ -327,7 +337,7 @@ $(document).ready(function(e) {
 
    $(function () {
 
-        if ( $().isotope ) {           
+        if ( $().isotope ) {
             var $container = $('.isotope-project');
             $container.imagesLoaded(function(){
                 $container.isotope({
@@ -336,7 +346,7 @@ $(document).ready(function(e) {
                 });
             });
 
-            $('.portfolio-filter li').on('click',function() {                           
+            $('.portfolio-filter li').on('click',function() {
                 var selector = $(this).find("a").attr('data-filter');
                 $('.portfolio-filter li').removeClass('active');
                 $(this).addClass('active');
@@ -348,7 +358,7 @@ $(document).ready(function(e) {
    });
 
 
-    
+
 /*------------------------------------------------------------------------------*/
 /* Prettyphoto
 /*------------------------------------------------------------------------------*/
@@ -362,7 +372,7 @@ $(document).ready(function(e) {
                     jQuery(this).attr('data-rel','prettyPhoto');
                 }
             }
-        });     
+        });
 
         jQuery('a[data-gal^="prettyPhoto"]').prettyPhoto();
         jQuery('a.ttm_prettyphoto').prettyPhoto();
@@ -370,7 +380,7 @@ $(document).ready(function(e) {
         jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({hook: 'data-gal'})
 
     });
-    
+
 
 /*------------------------------------------------------------------------------*/
 /* Slick_slider
@@ -379,7 +389,7 @@ $(document).ready(function(e) {
         speed: 1000,
         infinite: true,
         arrows: false,
-        dots: false,                   
+        dots: false,
         autoplay: false,
         centerMode : false,
 
@@ -418,8 +428,8 @@ $(document).ready(function(e) {
 /*------------------------------------------------------------------------------*/
 /* Back to top
 /*------------------------------------------------------------------------------*/
-    
-    // ===== Scroll to Top ==== 
+
+    // ===== Scroll to Top ====
     jQuery('#totop').hide();
 
     $(window).on("scroll",function(){

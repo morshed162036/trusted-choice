@@ -13,6 +13,7 @@ use App\Models\Slider;
 use App\Models\Service;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
+use App\Models\Settings;
 
 class FrontendController extends Controller
 {
@@ -29,25 +30,37 @@ class FrontendController extends Controller
         $data['testimonials'] = Testimonial::where('status', 'active')->orderBy('rating')->get();
         return view('frontend.homePage',$data);
     }
+    public function company_profile()
+    {
+        return view('frontend.companyprofile');
+    }
     public function about()
     {
         return view('frontend.aboutPage');
     }
     public function services()
     {
-        $services = Service::get()->all();
-        return view('frontend.service')->with(compact('services'));
+        $productImages= Gallery::where('image_type_id',1)->where('status','active')->orderBy('id','ASC')->get();
+        return view('frontend.service')->with(compact('productImages'));
     }
-    public function serviceDetails($id){
-        //$service = '';
-        $service = Service::findorFail($id);
-        return view('frontend.service-details')->with(compact('service'));
+    // public function serviceDetails($id){
+    //     //$service = '';
+    //     $service = Service::findorFail($id);
+    //     return view('frontend.service-details')->with(compact('service'));
+    // }
+
+    public function service_details(){
+        return view('frontend.service_details');
     }
 
     public function productsPage()
     {
         $data['productParentCategories'] = Category::tree();
-        return view('frontend.productParentPage',$data);
+        return view('frontend.productPage',$data);
+    }
+
+    public function product_details(){
+        return view('frontend.product_details');
     }
     public function products($id,$slug="")
     {
@@ -78,7 +91,8 @@ class FrontendController extends Controller
 
     public function galleries()
     {
-        $data['galleries'] = Gallery::where('status','active')->orderBy('created_at')->get();
+        $data['productImages']= Gallery::where('image_type_id',1)->where('status','active')->orderBy('id','ASC')->get();
+        $data['goodMemories']= Gallery::where('image_type_id',2)->where('status','active')->orderBy('id','ASC')->get();
         return view('frontend.galleryPage',$data);
     }
 
@@ -157,7 +171,13 @@ class FrontendController extends Controller
     }
 
     public function landingpage(){
-      return view('frontend.landing_page');
+        $settings = Settings::get()->all();
+      return view('frontend.landing_page', compact('settings'));
+    }
+
+    public function trusted_printers()
+    {
+        return view('frontend.trusted_printer');
     }
 
 }

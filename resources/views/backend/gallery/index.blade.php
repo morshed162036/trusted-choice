@@ -49,7 +49,7 @@
                                             <tr>
                                                 <th>SL</th>
                                                 <th>Gallery Name</th>
-                                                <th>Gallery Photo</th>
+                                                <th>Gallery Photo/Video</th>
                                                 <th>Status</th>
                                                 <th>Action</th>
                                             </tr>
@@ -58,13 +58,22 @@
                                             @foreach($gallerys as $key => $gallery)
                                                 <tr>
                                                     <td>{{ $key+1 }}</td>
-                                                    <td>{{ ucwords($gallery->title) }}</td>
+                                                    <td>{{ ucwords($gallery->type->type) }}</td>
                                                     <td>
-                                                        <img src="{{ asset($gallery->photo) }}" width="120" alt="">
+                                                        @if ($gallery->url)
+                                                        <iframe width="200" src="https://www.youtube.com/embed/1z5QzNqrPUw?si=A4Wo8nuqVJ8hypqT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                        @else
+                                                            <img src="{{ asset($gallery->photo) }}" width="200" alt="">
+                                                        @endif
                                                     </td>
                                                     <td>{{ ucwords($gallery->status) }}</td>
 {{--                                                    @canany(['gallery.update'])--}}
-                                                        <td><a href="{{ route('gallery.edit',$gallery->id) }}">Edit</a>
+                                                        <td>
+                                                            <a href="{{ route('gallery.edit',$gallery->id) }}">Edit</a>
+                                                            <form action="{{ route('gallery.destroy',$gallery->id) }}" method="post"> @csrf @method('delete')
+
+                                                                <button type="submit" class="text-danger">Delete</button>
+                                                            </form>
 {{--                                                    @endcanany--}}
 {{--                                                    @canany(['gallery.delete'])--}}
                                                         {{--                                         <a href="{{ route('adminGalleryDelete',$gallery->id) }}">Delete</a></td>--}}

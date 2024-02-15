@@ -1,206 +1,142 @@
 @extends('frontend.layouts.master')
-@section('title', 'services')
-@section('Services','active')
+@section('title', 'products')
+@section('services','active')
 @section('mainContent')
-    <!-- page-title -->
-    <div class="ttm-page-title-row ttm-bg ttm-bgimage-yes ttm-bgcolor-darkgrey clearfix">
-        <div class="ttm-row-wrapper-bg-layer ttm-bg-layer"></div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="ttm-page-title-row-inner">
-                        <div class="page-title-heading">
-                            <h2 class="title">Service</h2>
-                        </div>
-                        <div class="breadcrumb-wrapper">
-                            <span>
-                                <a title="Homepage" href="{{ route('home.all') }}">Home</a>
-                            </span>
-                            <span>All Services</span>
-                        </div>
+<!-- page-title -->
+<!-- page-title end -->
+
+<!--site-main start-->
+<!--grid-section end-->
+
+{{--  servic list section  --}}
+<!-- page-title -->
+<div class="ttm-page-title-row ttm-bg ttm-bgimage-yes ttm-bgcolor-darkgrey clearfix">
+    <div class="ttm-row-wrapper-bg-layer ttm-bg-layer banner"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="ttm-page-title-row-inner">
+                    <div class="page-title-heading">
+                        <h2 class="title">Products</h2>
+                    </div>
+                    <div class="breadcrumb-wrapper">
+                        <span>
+                            <a title="Homepage" href="{{ route('home.all') }}">Home</a>
+                        </span>
+                        <span>Product Page</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- page-title end -->
-
-<!--site-main start-->
-<div class="site-main">
-
-
-    <!--grid-section-->
-    <section class="ttm-row grid-section clearfix">
-        <div class="container">
-            <!-- row -->
-            <div class="row mb_15 mt_15">
-                {{--  @if ($services)
-                    @foreach ($services as $service)
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                            <!-- featured-imagebox-portfolio -->
-                            <div class="featured-imagebox featured-imagebox-portfolio style2">
-                                <!-- ttm-box-view-overlay -->
-                                <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
-                                    <!-- featured-thumbnail -->
-                                    <div class="featured-thumbnail">
-                                        <img class="img-fluid" src="{{ asset($service->photo) }}" alt="image">
-                                    </div>
-                                    <!-- featured-thumbnail end-->
-                                    <div class="ttm-media-link">
-                                        <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="{{ $service->service_name }}" href="{{ asset($service->photo) }}" data-rel="prettyPhoto" tabindex="0">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                        <a href="{{ route('services.details',$service->id) }}" class="ttm_link" tabindex="0"><i class="fa fa-random"></i></a>
-                                    </div>
+</div>
+@if ($productImages)
+    <!--Product Image Section-->
+    <section class="ttm-row padding_zero-section col_overlay_section bg-layer-equal-height ttm-bgcolor-skincolor clearfix my-4"
+    id="Gallery">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-xl-5">
+                    <div class="ttm-bg ttm-col-bgcolor-yes ttm-bgcolor-darkgrey ttm-right-span spacing-4">
+                        <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                        <div class="layer-content">
+                            <div class="section-title">
+                                <div class="title-header">
+                                    <h2 class="title" style="color:#fffad2">Our Products </h2>
                                 </div>
-                                <div class="featured-content">
-                                    <div class="featured-title">
-                                        <h3><a href="{{ route('services.details',$service->id) }}"> {{ ucwords($service->service_name) }}</a></h3>
-                                    </div>
-                                    <div class="featured-desc">
-                                        <p>{{ $service->short_text }}</p>
-                                    </div>
-                                </div>
-                            </div><!-- featured-imagebox-portfolio end-->
+                            </div>
                         </div>
-                    @endforeach
-                @endif  --}}
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="ttm-bg ttm-col-bgcolor-yes ttm-bgcolor-skincolor ttm-right-span spacing-5">
+                        <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                        <div class="layer-content">
+                            <div class="ml_160 res-1199-margin_left0">
+                                <div class="row ttm-boxes-spacing-10px slick_slider slick-arrows-style3"
+                                    data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "arrows":true, "autoplay":true, "infinite":true, "responsive": [{"breakpoint":1400,"settings":{"slidesToShow": 3}} , {"breakpoint":1204,"settings":{"slidesToShow": 3}}, {"breakpoint":777,"settings":{"slidesToShow": 2}},                {"breakpoint":575,"settings":{"slidesToShow": 2}}]}'>
 
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <!-- featured-imagebox-portfolio -->
-                    <div class="featured-imagebox featured-imagebox-portfolio style2">
-                        <!-- ttm-box-view-overlay -->
-                        <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
-                            <!-- featured-thumbnail -->
-                            <div class="featured-thumbnail">
-                                <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/services/service-1.jfif')}}" alt="image"></a>
-                            </div><!-- featured-thumbnail end-->
-                            <div class="ttm-media-link">
-                                <a class="ttm_prettyphoto ttm_image" title="Cotton Fabric" data-rel="prettyPhoto" href="images/portfolio/portfolio-02-1200x800.jpg">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                                <a href="{{ route('services.details') }}" class="ttm_link"><i class="fa fa-random"></i></a>
-                            </div>
-                        </div><!-- ttm-box-view-overlay end-->
-                        <div class="featured-content">
-                            <div class="featured-title">
-                                <h3><a href="{{ route('services.details') }}">Excuistie leather patch</a></h3>
-                            </div>
-                            <div class="featured-desc">
-                                <p>Molestie a iaculis at erat. Varius vel pharetra vel turpis. Ac turpis egestas integer aliquet.</p>
+                                    @foreach ($productImages as $product)
+                                        <div class="col-lg-3 col-md-6 col-sm-6 ttm-box-col-wrapper">
+                                            <div class="featured-imagebox featured-imagebox-portfolio style1">
+                                                <div class="featured-thumbnail">
+                                                    <img class="img-fluid"
+                                                        src="{{ asset($product->photo) }}" alt="image">
+                                                </div>
+                                                {{-- <div class="ttm-media-link">
+                                                    <a class="ttm_prettyphoto ttm_image" title="Silk Fabric"
+                                                        data-rel="prettyPhoto"
+                                                        href="{{asset('frontend')}}/images/product/image1.jpg">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                </div> --}}
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
-                    </div><!-- featured-imagebox-portfolio -->
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <!-- featured-imagebox-portfolio -->
-                    <div class="featured-imagebox featured-imagebox-portfolio style2">
-                        <!-- ttm-box-view-overlay -->
-                        <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
-                            <!-- featured-thumbnail -->
-                            <div class="featured-thumbnail">
-                                <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/services/services-2.jfif')}}" alt="image"></a>
-                            </div><!-- featured-thumbnail end-->
-                            <div class="ttm-media-link">
-                                <a class="ttm_prettyphoto ttm_image" title="Leather Material" data-rel="prettyPhoto" href="images/portfolio/portfolio-03-1200x800.jpg">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                                <a href="{{ route('services.details') }}" class="ttm_link"><i class="fa fa-random"></i></a>
-                            </div>
-                        </div><!-- ttm-box-view-overlay end-->
-                        <div class="featured-content">
-                            <div class="featured-title">
-                                <h3><a href="{{ route('services.details') }}">Fashion Forward jacquard elastic</a></h3>
-                            </div>
-                            <div class="featured-desc">
-                                <p>Augue eget arcu dictum varius duis at consectetur. A diam sollicitudin tempor id eu nisl nunc mi ipsum.</p>
-                            </div>
-                        </div>
-                    </div><!-- featured-imagebox-portfolio -->
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <!-- featured-imagebox-portfolio -->
-                    <div class="featured-imagebox featured-imagebox-portfolio style2">
-                        <!-- ttm-box-view-overlay -->
-                        <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
-                            <!-- featured-thumbnail -->
-                            <div class="featured-thumbnail">
-                                <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/services/services-3.jfif')}}" alt="image"></a>
-                            </div><!-- featured-thumbnail end-->
-                            <div class="ttm-media-link">
-                                <a class="ttm_prettyphoto ttm_image" title="Georgette Fabric" data-rel="prettyPhoto" href="images/portfolio/portfolio-04-1200x800.jpg">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                                <a href="{{ route('services.details') }}" class="ttm_link"><i class="fa fa-random"></i></a>
-                            </div>
-                        </div><!-- ttm-box-view-overlay end-->
-                        <div class="featured-content">
-                            <div class="featured-title">
-                                <h3><a href="{{ route('services.details') }}">Distinactive print label</a></h3>
-                            </div>
-                            <div class="featured-desc">
-                                <p>Varius sit amet mattis vulputate enim nulla. Viverra maecenas accumsan lacus vel facilisis.</p>
-                            </div>
-                        </div>
-                    </div><!-- featured-imagebox-portfolio -->
-                </div>
-                {{--  <div class="col-lg-4 col-md-4 col-sm-6">
-                    <!-- featured-imagebox-portfolio -->
-                    <div class="featured-imagebox featured-imagebox-portfolio style2">
-                        <!-- ttm-box-view-overlay -->
-                        <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
-                            <!-- featured-thumbnail -->
-                            <div class="featured-thumbnail">
-                                <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/portfolio/portfolio-05-768x512.jpg')}}" alt="image"></a>
-                            </div><!-- featured-thumbnail end-->
-                            <div class="ttm-media-link">
-                                <a class="ttm_prettyphoto ttm_image" title="Wool Fabric" data-rel="prettyPhoto" href="images/portfolio/portfolio-05-1200x800.jpg">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                                <a href="{{ route('services.details') }}" class="ttm_link"><i class="fa fa-random"></i></a>
-                            </div>
-                        </div><!-- ttm-box-view-overlay end-->
-                        <div class="featured-content">
-                            <div class="featured-title">
-                                <h3><a href="{{ route('services.details') }}">Wool Fabric</a></h3>
-                            </div>
-                            <div class="featured-desc">
-                                <p>Neque convallis a cras semper auctor neque tempus. Tortor consequat venenatis crasor.</p>
-                            </div>
-                        </div>
-                    </div><!-- featured-imagebox-portfolio -->
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <!-- featured-imagebox-portfolio -->
-                    <div class="featured-imagebox featured-imagebox-portfolio style2">
-                        <!-- ttm-box-view-overlay -->
-                        <div class="ttm-box-view-overlay ttm-portfolio-box-view-overlay">
-                            <!-- featured-thumbnail -->
-                            <div class="featured-thumbnail">
-                                <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/portfolio/portfolio-06-768x512.jpg')}}" alt="image"></a>
-                            </div><!-- featured-thumbnail end -->
-                            <div class="ttm-media-link">
-                                <a class="ttm_prettyphoto ttm_image" title="Linen Fabric" data-rel="prettyPhoto" href="images/portfolio/portfolio-06-1200x800.jpg">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                                <a href="{{ route('services.details') }}" class="ttm_link"><i class="fa fa-random"></i></a>
-                            </div>
-                        </div><!-- ttm-box-view-overlay end-->
-                        <div class="featured-content">
-                            <div class="featured-title">
-                                <h3><a href="{{ route('services.details') }}">Linen Fabric</a></h3>
-                            </div>
-                            <div class="featured-desc">
-                                <p>Varius sit amet mattis vulputate enim nulla. Viverra maecenas accumsan facilisis.</p>
-                            </div>
-                        </div>
-                    </div><!-- featured-imagebox-portfolio -->
-                </div>  --}}
             </div>
         </div>
     </section>
-    <!--grid-section end-->
+        <!-- Product Image section end -->
+@endif
+<!-- page-title end -->
+<section class="service_list py-4 cserve">
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            <h2>Product List</h2>
+        </div>
+        <ol class="custom_list">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <li><span class="ttm-list-li-content">Woven Label</span></li>
+                <li><span class="ttm-list-li-content">Hangtag</span></li>
+                <li><span class="ttm-list-li-content">Care Label</span></li>
+                <li><span class="ttm-list-li-content">Heat Transfer Label</span></li>
+                <li><span class="ttm-list-li-content">Poly Bag, Poly sticker</span></li>
+                <li><span class="ttm-list-li-content">Poly Bag, Poly sticker</span></li>
+                <li><span class="ttm-list-li-content">Cartoon, Cartoon sticker</span></li>
+                <li><span class="ttm-list-li-content">plastic clip</span></li>
 
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+               <li><span class="ttm-list-li-content">collor Bone</span></li>
+                <li><span class="ttm-list-li-content">Button</span></li>
+                <li><span class="ttm-list-li-content">Brass Pin</span></li>
+                <li><span class="ttm-list-li-content">Tissue Paper</span></li>
+                <li><span class="ttm-list-li-content">HangTag String</span></li>
+                <li><span class="ttm-list-li-content">Metal Clip</span></li>
+                <li><span class="ttm-list-li-content">Metal Button</span></li>
+                <li><span class="ttm-list-li-content">Metal Button</span></li>
 
-</div><!--site-main end-->
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+
+                <li><span class="ttm-list-li-content">Plastic Zipper puller</span></li>
+                <li><span class="ttm-list-li-content">Twill Tape</span></li>
+                <li><span class="ttm-list-li-content">Cotton tape</span></li>
+                <li><span class="ttm-list-li-content">Drawcord</span></li>
+                <li><span class="ttm-list-li-content">Drawstring</span></li>
+                <li><span class="ttm-list-li-content">Elastic</span></li>
+                <li><span class="ttm-list-li-content">Backboard</span></li>
+                <li><span class="ttm-list-li-content">paper neck Board</span></li>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+               <li><span class="ttm-list-li-content">Shank Button</span></li>
+                <li><span class="ttm-list-li-content">Shanp Button</span></li>
+                <li><span class="ttm-list-li-content">Plastic Stopper</span></li>
+                <li><span class="ttm-list-li-content">plastic M clip</span></li>
+                <li><span class="ttm-list-li-content">Collar insert</span></li>
+                <li><span class="ttm-list-li-content">Butterfy</span></li>
+                <li><span class="ttm-list-li-content">Rubber Badge</span></li>
+                <li><span class="ttm-list-li-content">Leather Badge</span></li>
+                <li><span class="ttm-list-li-content">Metal Badge</span></li>
+
+            </div>
+        </ol>
+    </div>
+</section>
+<!--site-main end-->
 @endsection

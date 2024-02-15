@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use App\Models\Gallery;
 use App\Models\Slider;
+use App\Models\ImageType;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -22,7 +23,7 @@ class GalleryController extends Controller
 //            abort(403,'Unauthorized Action');
 //        }
 
-        $data['gallerys']= Gallery::where('status','active')->orderBy('id','ASC')->get();
+        $data['gallerys']= Gallery::with('type')->orderBy('id','ASC')->get();
         return view('backend.gallery.index',$data);
     }
 
@@ -37,7 +38,8 @@ class GalleryController extends Controller
 //        if (!Auth::user()->can('gallery.create')){
 //            abort(403,'Unauthorized Action');
 //        }
-        return view('backend.gallery.create');
+        $imageTypes = ImageType::get()->all();
+        return view('backend.gallery.create',compact('imageTypes'));
     }
 
     /**
@@ -52,16 +54,15 @@ class GalleryController extends Controller
 //        if (!Auth::user()->can('gallery.create')){
 //            abort(403,'Unauthorized Action');
 //        }
-//        dd($request->all());
+        //dd($request->all());
 
         $request->validate([
-            'title' => ['required','string','min:3','max:40'],
-            'photo' => ['required','mimes:jpeg,jpg,png','max:2048'],
-        ],[
-            'name.required' => 'Slider name required',
+            'type' => ['required'],
+            'photo' => ['mimes:jpeg,jpg,png|max:2048|dimensions:width=1453,height=1089'],
         ]);
 
-        $data['title'] = $request->title;
+        $data['image_type_id'] = $request->type;
+        $data['url'] = $request->video;
         $data['status'] = $request->status;
 
         //Gallery_photo
@@ -101,7 +102,7 @@ class GalleryController extends Controller
 //        if (!Auth::user()->can('gallery.update')){
 //            abort(403,'Unauthorized Action');
 //        }
-
+        $data['imageTypes'] = ImageType::get()->all();
         $data['gallery'] = Gallery::findOrFail($id);
         return view('backend.gallery.edit',$data);
     }
@@ -122,13 +123,12 @@ class GalleryController extends Controller
 //        }
         $checkSlider = Gallery::findOrFail($id);
         $request->validate([
-            'title' => ['required','string','min:3','max:40'],
-            'photo' => ['required','mimes:jpeg,jpg,png','max:2048'],
-        ],[
-            'name.required' => 'Slider name required',
+            'type' => ['required'],
+            'photo' => ['mimes:jpeg,jpg,png|max:2048|dimensions:width=1453,height=1089'],
         ]);
 
-        $data['title'] = $request->title;
+        $data['image_type_id'] = $request->type;
+        $data['url'] = $request->video;
         $data['status'] = $request->status;
 
         // slider_photo
@@ -160,6 +160,11 @@ class GalleryController extends Controller
      */
     public function destroy(Gallery $gallery)
     {
-        //
+        //dd($gallery);
+        if(file_exists($gallery->photo)){
+            unlink($gallery->photo);
+        }
+        $gallery->delete();
+        return redirect()->back()->with('success','Gallery Delete Successfully');
     }
 }

@@ -1,0 +1,295 @@
+.footer .social-icons li a {
+    background-color: red !important;
+}
+
+.footer .social-icons li a:hover {
+    color: black;
+}
+
+
+ul.widget_contact_wrapper li {
+    margin: 0px 10px !important;
+}
+
+.footer .widget ul {
+    display: flex !important;
+}
+
+
+.site-header-menu-inner.ttm-stickable-header {
+    background-color: #d1d2d3d4;
+}
+
+
+
+/* service list */
+
+@media only screen and (min-width: 980px) {
+    .cserve ol {
+        display: flex;
+    }
+
+}
+
+/* header_start */
+.site-header-menu-inner.ttm-stickable-header {
+    background-color: #2e3092;
+}
+
+/* header_end */
+
+/* ancortag color */
+a {
+    color: #ffffff;
+}
+
+.ttm-textcolor-skincolor,
+.ttm-textcolor-skincolor h1,
+.ttm-textcolor-skincolor h2,
+.ttm-textcolor-skincolor h3,
+.ttm-textcolor-skincolor h4,
+.ttm-textcolor-skincolor h5,
+.ttm-textcolor-skincolor h6,
+.ttm-textcolor-skincolor a,
+.ttm-textcolor-skincolor i,
+:not(.ttm-bgcolor-darkgrey) .ttm-textcolor-skincolor a,
+:not(.ttm-bgcolor-darkgrey) .ttm-textcolor-skincolor i,
+:not(.ttm-bgcolor-darkgrey) .ttm-textcolor-skincolor a,
+:not(.ttm-bgcolor-darkgrey) .ttm-textcolor-skincolor i,
+a.ttm-textcolor-skincolor,
+i.ttm-textcolor-skincolor,
+:not(.ttm-bgcolor-darkgrey) a.ttm-textcolor-skincolor,
+:not(.ttm-bgcolor-darkgrey) i.ttm-textcolor-skincolor,
+:not(.ttm-bgcolor-darkgrey) .ttm-textcolor-skincolor,
+.ttm-bgcolor-darkgrey .ttm-textcolor-skincolor h1,
+.ttm-bgcolor-darkgrey .ttm-textcolor-skincolor h2,
+.ttm-bgcolor-darkgrey .ttm-textcolor-skincolor h3,
+.ttm-bgcolor-darkgrey .ttm-textcolor-skincolor h4,
+.ttm-bgcolor-darkgrey .ttm-textcolor-skincolor h5,
+.ttm-bgcolor-darkgrey .ttm-textcolor-skincolor h6,
+.ttm-bgcolor-darkgrey a:hover,
+.ttm-textcolor-white a:hover,
+.ttm-bgcolor-darkgrey a:hover i,
+.ttm-btn-color-skincolor,
+.ttm-bgcolor-darkgrey .ttm-btn-color-skincolor,
+.ttm-bgcolor-darkgrey .ttm-btn-color-skincolor i,
+.ttm-bgcolor-grey .ttm-btn-color-skincolor,
+.ttm-list-icon-color-skincolor li i,
+.ttm-icon_element-border.ttm-icon_element-color-skincolor,
+.ttm-icon_element-border.ttm-icon_element-color-grey,
+.ttm-btn-style-border.ttm-btn-color-skincolor,
+.ttm-icon_element-fill.ttm-icon_element-color-white,
+.ttm-icon_element-fill.ttm-icon_element-color-white i,
+.ttm-icon_element-color-skincolor,
+.ttm-icon_element-color-skincolor:not(.ttm-icon_element-fill) i,
+.ttm-bgcolor-darkgrey .ttm-icon_element-color-skincolor i,
+.top_bar .top_bar_contact_item .top_bar_icon i,
+nav.main-menu ul.menu li>ul.mega-submenu li a:hover,
+nav.main-menu ul.menu li ul.mega-submenu li.active>a,
+nav.main-menu ul.menu li.active>a,
+nav.main-menu,
+a:hover,
+.ttm-bgcolor-darkgrey a:hover,
+.ttm-header-style-02 .social-icons li a:hover,
+.ttm-header-style-03 #site-header-menu .site-navigation ul.menu>li.active>a,
+.section-title h3,
+.ttm-bgcolor-darkgrey .section-title h3,
+.widget ul#menu-footer-quick-links li a:before,
+.featured-imagebox-portfolio.style1 .featured-content .featured-title h3 a:hover,
+.breadcrumb-wrapper span,
+.widget .call_detail h3,
+.widget.widget-nav-menu ul li.active a,
+.widget.offer_widget h2,
+.widget.offer_widget h3,
+.featured-imagebox-post.style2 .featured-content .post-meta span i,
+.slick-active.slick-current .testimonials.ttm-testimonial-box-view-style2 .testimonial-content blockquote:before,
+.ttm-highlight-quote blockquote:before,
+.ttm-p_table-amount,
+.ttm-p_table-price,
+.ttm-page-title-row .breadcrumb-wrapper i,
+.featured-imagebox-post .ttm-btn i,
+.featured-imagebox-post.style2 .featured-content h3:hover a,
+.featured-imagebox-services.style1:hover .featured-content .ttm-details-link a,
+.ttm-blog-classic .post-meta .ttm-meta-line i,
+.ttm-blog-single .post-meta .ttm-meta-line i,
+.ttm-blogbox-footer-readmore .ttm-btn i,
+.ttm-tags-links-title i {
+    /* color: #D7282f; */
+    color: #fffad2;
+}
+
+/* add menubar  custom css (our company) */
+#our_company>li>a:hover {
+    color: red !important;
+}
+
+.fa-phone:before {
+    color: #fff;
+}
+
+h3.widget_title {
+    color: #fffad2;
+}
+
+p.widget_desc {
+    color: #fff !important;
+}
+
+/* banner responsive start */
+
+@media only screen and (max-width: 400px) {
+    .banner_slider .slide {
+      height: 200px;
+  }
+}
+
+/* banner responsive end */
+
+
+.ttm-bgcolor-darkgrey,
+.ttm-bgcolor-darkgrey>.ttm-bg-layer,
+.ttm-bgcolor-darkgrey>.ttm-bg-layer>.ttm-col-wrapper-bg-layer-inner,
+.ttm-bgcolor-skincolor .tooltip:after,
+.ttm-bgcolor-skincolor [data-tooltip]:after,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-dark,
+.tooltip:after,
+[data-tooltip]:after,
+.ttm-icon_element-fill.ttm-icon_element-color-darkgrey,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-skincolor:not(.btn-inline):hover:after,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-skincolor:not(.btn-inline):hover:before,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-grey:not(.btn-inline):hover:before,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-grey:not(.btn-inline):hover:after,
+.ttm-btn.ttm-btn-style-border.ttm-btn-color-grey:not(.btn-inline):hover:before,
+.ttm-btn.ttm-btn-style-border.ttm-btn-color-grey:not(.btn-inline):hover:after,
+.ttm-btn.ttm-btn-style-border.ttm-btn-color-dark:not(.btn-inline):hover:before,
+.ttm-btn.ttm-btn-style-border.ttm-btn-color-dark:not(.btn-inline):hover:after,
+.ttm-bgcolor-skincolor .ttm-btn.ttm-btn-style-fill.ttm-btn-color-white:not(.btn-inline):hover:before,
+.ttm-bgcolor-skincolor .ttm-btn.ttm-btn-style-fill.ttm-btn-color-white:not(.btn-inline):hover:after,
+.ttm-toggle-title-bgcolor-darkgrey,
+.toggle.ttm-toggle_style_border.ttm-toggle-title-bgcolor-darkgrey .toggle-title a.active,
+.ttm-progress-bar .progress-bar.progress-bar-color-bar_darkgrey,
+.ttm-progress-bar .progress-bar-inner .progress-bar.progress-bar-color-bar_darkgrey:before,
+.ttm-box-view-overlay:before,
+.ttm-box-view-content-inner:before,
+.ttm-box-view-overlay:after,
+.ttm-box-view-content-inner:after,
+.ttm-toggle-title-bgcolor-white .toggle-title a.active {
+    background-color: #d8262e;
+}
+
+a.ttm-btn.ttm-btn-size-md.ttm-btn-shape-square.ttm-btn-style-fill.ttm-btn-color-skincolor.margin_top20.res-991-margin_right15 {
+    background: #000;
+}
+
+a.ttm-btn.ttm-btn-size-md.ttm-btn-shape-square.ttm-btn-style-border.ttm-btn-color-white.margin_top20 {
+    background-color: #000;
+}
+
+
+/* footer_start */
+.footer .footer-logo img {
+    width: 100px;
+    height: 80px;
+}
+
+.textwidget.widget-text {
+    font-size: 24px !important;
+}
+
+.first-footer .widget {
+    padding: 0px !important;
+}
+
+
+i.ttm-textcolor-skincolor.fa.fa-map-marker {
+    color: #fff;
+}
+
+.fa-envelope-o:before {
+    color: #fff;
+}
+
+@media only screen and (min-width: 375px) {
+    ul.widget_contact_wrapper li {
+        margin: 12px !important;
+    }
+}
+
+.highlight {
+    color: #d8262e !important;
+    font-weight: 800;
+}
+
+/* footer_end */
+
+
+/* service list start */
+.custom_list {
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+}
+
+/* service list endf */
+
+.image_box img {
+    height: 350px;
+    margin: 20px 2px;
+}
+.slick_slider.slick-arrows-style1 .slick-arrow {
+    margin: 0 -60px;
+    opacity: 1;
+    overflow: visible !important;
+}
+form .text-input input, textarea {
+    border: .5px solid rgb(175, 175, 175);
+}
+.section-title {
+    position: relative;
+    margin-bottom: -16px;
+    margin-top: -46px;
+}
+.ttm-bgcolor-darkgrey > .banner{
+    background-color: #A6CE38;
+}
+.ttm-bgcolor-skincolor > .skycolor{
+    background-color: #6dcff6;
+}
+.section-title {
+    position: relative;
+    margin-bottom: -16px;
+    margin-top: -26px;
+}
+.img_logo{
+    max-width: 80% !important;
+    height: auto;
+}
+.highlight {
+    color: #000 !important;
+    font-weight: 800;
+}
+.basicinfobutton {
+    background-color: #d8262e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.staffbutton {
+    background-color: #2E3092;
+    border: none;
+    color: white;
+    padding: 5px 2px;
+    cursor: pointer;
+}
+.last{
+    text-align: center;
+}
+#border-color tr td{
+    border: 1px solid black;
+}

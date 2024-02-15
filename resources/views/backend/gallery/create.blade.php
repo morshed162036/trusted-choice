@@ -39,15 +39,23 @@
                                 <form class="form-horizontal"  action="{{ route('gallery.store') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="row">
-                                        <div class="col-md-12">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Gallery Name </label>
+                                                <label>Gallery Type </label>
                                                 <div class="controls position-relative has-icon-left">
-                                                    <input type="text" name="title" class="form-control" value="{{ old('title') }}" required  placeholder="Gallery Name">
+                                                    {{-- <input type="text" name="title" class="form-control" value="{{ old('title') }}" required  placeholder="Gallery Name"> --}}
+                                                    <select name="type" id="" class="select3-theme form-control">
+                                                        <option value="">----Select Type----</option>
+                                                        @if ($imageTypes)
+                                                            @foreach ($imageTypes as $type)
+                                                                <option value="{{ $type->id }}">{{ $type->type }}</option>
+                                                            @endforeach
+                                                        @endif
+                                                    </select>
                                                     <div class="form-control-position">
                                                         <i class="bx bx-user"></i>
                                                     </div>
-                                                    @error('title')
+                                                    @error('type')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
@@ -58,9 +66,21 @@
                                             <div class="form-group">
                                                 <label>Gallery Photo</label>
                                                 <div class="controls custom-file">
-                                                    <input name="photo" type="file" class="custom-file-input" id="photo" required>
+                                                    <input name="photo" type="file" class="custom-file-input" id="photo">
                                                     <label class="custom-file-label" for="photo">Choose file</label>
+                                                    <span class="text-danger">Size: 1453 x 1089</span>
                                                     @error('photo')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Video Url</label>
+                                                <div class="controls custom-file">
+                                                    <input name="video" type="text" class="form-control" id="video" placeholder="url">
+                                                    @error('video')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>

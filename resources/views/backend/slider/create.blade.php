@@ -53,6 +53,16 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
+                                                <label>Slider Photo</label>
+                                                <div class="controls custom-file">
+                                                    <input name="slider_photo" type="file" class="custom-file-input" id="slider_photo" required>
+                                                    <label class="custom-file-label" for="photo">Choose file</label>
+                                                    @error('slider_photo')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <!-- <div class="form-group">
                                                 <label>Slider Title </label>
                                                 <div class="controls position-relative has-icon-left">
                                                     <input type="text" name="title" class="form-control" value="{{ old('title') }}"  placeholder="Slider Title">
@@ -99,7 +109,7 @@
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
-                                            </div>
+                                            </div> -->
 
 
                                         </div>
@@ -117,7 +127,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="form-group">
+                                            <!-- <div class="form-group">
                                                 <label>Video URL</label>
                                                 <div class="controls position-relative has-icon-left">
                                                     <input type="text" name="video_url" class="form-control" value="{{ old('video_url') }}"  placeholder="Video URL">
@@ -128,18 +138,9 @@
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
-                                            </div>
+                                            </div> -->
 
-                                            <div class="form-group">
-                                                <label>Slider Photo</label>
-                                                <div class="controls custom-file">
-                                                    <input name="slider_photo" type="file" class="custom-file-input" id="slider_photo" required>
-                                                    <label class="custom-file-label" for="photo">Choose file</label>
-                                                    @error('slider_photo')
-                                                    <div class="text-danger">{{ $message }}</div>
-                                                    @enderror
-                                                </div>
-                                            </div>
+                                           
 
                                             <div class="form-group">
                                                 <label>Published *</label>

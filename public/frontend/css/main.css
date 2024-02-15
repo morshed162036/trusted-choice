@@ -1114,7 +1114,7 @@ a.ttm-btn.ttm-btn-style-fill.ttm-btn-color-white:hover,
 .ttm-progress-bar .progress-bar.progress-bar-color-bar_white,
 .progress-bar-color-bar_white,
 .ttm-toggle-title-bgcolor-white .toggle-title a {
-    background-color: #fff;
+    background-color: #f8f8f8;
 }
 
 /** White-border-color **/
@@ -2231,9 +2231,9 @@ nav.main-menu .megamenu-content .title{
     background-position: center center;
     background-attachment: scroll;
 }
-.footer .footer-logo img {
+/* .footer .footer-logo img {
     max-height: 46px;
-}
+} */
 .footer .footer-logo {
     position: relative;
     min-width: 260px;
@@ -2453,7 +2453,7 @@ ul.widget_contact_wrapper li i{
 
 
 .bottom-footer-text{
-    background-color: #1e2830;
+    /* background-color: #1e2830; */
     background-position: center center;
     background-size: auto;
     background-repeat: no-repeat;

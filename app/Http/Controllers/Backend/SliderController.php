@@ -57,21 +57,11 @@ class SliderController extends Controller
         $request->validate([
             'name' => ['required','string','min:3','max:40'],
             'position' => ['required','string','max:40'],
-            'title' => ['nullable','string','min:3','max:100'],
-            'sub_title' => ['nullable','string','min:3','max:80'],
-            'button_name' => ['nullable','string','min:2','max:40'],
-            'button_url' => ['nullable','string','min:3','max:256'],
-            'video_url' => ['nullable','string','min:3','max:256'],
-            'slider_photo' => ['required','mimes:jpeg,jpg,png','max:2048'],
+            'slider_photo' => ['required','mimes:jpeg,jpg,png','max:2048','dimensions:width=1920,height=800'],
         ],[
             'name.required' => 'Slider name required',
         ]);
         $data['name'] = $request->name;
-        $data['title'] = $request->title;
-        $data['sub_title'] = $request->sub_title;
-        $data['button_name'] = $request->button_name;
-        $data['button_url'] = $request->button_url;
-        $data['video_url'] = $request->video_url;
         $data['position'] = $request->position;
         $data['status'] = $request->status;
 
@@ -139,22 +129,12 @@ class SliderController extends Controller
         $request->validate([
             'name' => ['required','string','min:3','max:40'],
             'position' => ['required','string','max:40'],
-            'title' => ['nullable','string','min:3','max:100'],
-            'sub_title' => ['nullable','string','min:3','max:80'],
-            'button_name' => ['nullable','string','min:2','max:40'],
-            'button_url' => ['nullable','string','min:3','max:256'],
-            'video_url' => ['nullable','string','min:3','max:256'],
-            'slider_photo' => ['nullable','mimes:jpeg,jpg,png','max:2048'],
+            'slider_photo' => ['required','mimes:jpeg,jpg,png','max:2048','dimensions:width=1920,height=800'],
         ],[
             'name.required' => 'Slider name required',
         ]);
         $data['name'] = $request->name;
         $data['position'] = $request->position;
-        $data['title'] = $request->title;
-        $data['sub_title'] = $request->sub_title;
-        $data['button_name'] = $request->button_name;
-        $data['button_url'] = $request->button_url;
-        $data['video_url'] = $request->video_url;
         $data['status'] = $request->status;
 
         // slider_photo

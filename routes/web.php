@@ -15,9 +15,10 @@ use App\Http\Controllers\Frontend\FrontendController;
 
 Route::get('/',[FrontendController::class,'index'])->name('home.all');
 Route::get('about-us',[FrontendController::class,'about'])->name('about.all');
-Route::get('services','\App\Http\Controllers\Frontend\FrontendController@services')->name('services.all');
+Route::get('company-profile',[FrontendController::class,'company_profile'])->name('company.profile');
+Route::get('products','\App\Http\Controllers\Frontend\FrontendController@services')->name('services.all');
 Route::get('services-details/{id?}','\App\Http\Controllers\Frontend\FrontendController@servicedetails')->name('services.details');
-Route::get('products','\App\Http\Controllers\Frontend\FrontendController@productsPage')->name('products.all');
+// Route::get('products','\App\Http\Controllers\Frontend\FrontendController@productsPage')->name('products.all');
 Route::get('products/{id}/{slug?}','\App\Http\Controllers\Frontend\FrontendController@products')->name('products');
 Route::get('photo-gallery','\App\Http\Controllers\Frontend\FrontendController@galleries')->name('photo-gallery.all');
 Route::get('blogs','\App\Http\Controllers\Frontend\FrontendController@blogs')->name('blogs.all');
@@ -30,6 +31,11 @@ Route::post('user-subscribe','\App\Http\Controllers\Frontend\FrontendController@
 // new add
 Route::get('landing_page', '\App\Http\Controllers\Frontend\FrontendController@landingpage')->name('landing.page');
 
+Route::get('trusted_printers', '\App\Http\Controllers\Frontend\FrontendController@trusted_printers')->name('landing.trusted_printers');
+
+Route::get('service/details', '\App\Http\Controllers\Frontend\FrontendController@service_details')->name('service.details');
+
+Route::get('product/details', '\App\Http\Controllers\Frontend\FrontendController@product_details')->name('product.details');
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     Route::get('/dashboard', \App\Http\Controllers\Backend\DashboardController::class)->name('dashboard');

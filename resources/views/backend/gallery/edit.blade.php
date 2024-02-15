@@ -36,23 +36,34 @@
                         </div>
                         <div class="card-content">
                             <div class="card-body">
-                                <form class="form-horizontal"  action="{{ route('gallery.store') }}" method="POST" enctype="multipart/form-data">
-                                    @csrf
+                                <form class="form-horizontal"  action="{{ route('gallery.update',$gallery->id) }}" method="POST" enctype="multipart/form-data">
+                                    @csrf @method('put')
                                     <div class="row">
-                                        <div class="col-md-12">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Gallery Name </label>
+                                                <label>Gallery Type </label>
                                                 <div class="controls position-relative has-icon-left">
-                                                    <input type="text" name="title" class="form-control" value="{{ old('title',isset($gallery->title)?ucwords($gallery
-->title):null) }}" required  placeholder="Gallery Name">
+                                                    {{-- <input type="text" name="title" class="form-control" value="{{ old('title') }}" required  placeholder="Gallery Name"> --}}
+                                                    <select name="type" id="" class="select3-theme form-control">
+                                                        <option value="">----Select Type----</option>
+                                                        @if ($imageTypes)
+                                                            @foreach ($imageTypes as $type)
+                                                                <option value="{{ $type->id }}" @if ($type->id == $gallery->image_type_id)
+                                                                    selected
+                                                                @endif>{{ $type->type }}</option>
+                                                            @endforeach
+                                                        @endif
+                                                    </select>
                                                     <div class="form-control-position">
                                                         <i class="bx bx-user"></i>
                                                     </div>
-                                                    @error('title')
+                                                    @error('type')
                                                     <div class="text-danger">{{ $message }}</div>
                                                     @enderror
                                                 </div>
                                             </div>
+
+                                        </div>
 
                                         </div>
                                         <div class="col-md-6">
@@ -61,6 +72,7 @@
                                                 <div class="controls custom-file">
                                                     <input name="photo" type="file" class="custom-file-input" id="photo">
                                                     <label class="custom-file-label" for="photo">Choose file</label>
+                                                    <span class="text-danger">Size: 1453 x 1089</span>
                                                     @if($gallery->photo != null)
                                                         <br><br>
                                                         <img src="{{ asset($gallery->photo) }}" class="user-profile-image rounded" alt="slider image" style="height: 150px !important; width: 250px !important;" >
@@ -73,7 +85,17 @@
                                                     @enderror
                                                 </div>
                                             </div>
-
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Video Url</label>
+                                                <div class="controls custom-file">
+                                                    <input name="video" type="text" class="form-control" id="video" placeholder="url" value="{{ $gallery->url }}">
+                                                    @error('video')
+                                                    <div class="text-danger">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
