@@ -42,3 +42,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The APOL POS is not an open-sourced software licensed under the [APOL license](https://apol.com.bd).
+# trusted-choice
