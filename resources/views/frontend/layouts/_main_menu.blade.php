@@ -1,7 +1,7 @@
 <nav class="main-menu menu-mobile" id="menu">
     <ul class="menu">
         <li class="mega-menu-item @yield('home')">
-            <a href="{{ route('home.all') }}" class="mega-menu-link">Home</a>
+            <a href="{{ route('home.all') }}">Home</a>
         </li>
 
         <li class="mega-menu-item @yield('company_profile')">
@@ -13,7 +13,7 @@
         </li>
 
         <li class="mega-menu-item @yield('services')">
-            <a href="{{ route('services.all') }}" class="mega-menu-link">Product</a>
+            <a href="{{ route('services.all') }}">Product</a>
         </li>
         <li class="mega-menu-item">
             <a href="#Concern" class="mega-menu-link">Our Companies</a>

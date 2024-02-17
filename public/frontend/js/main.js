@@ -157,13 +157,26 @@ $(document).ready(function(e) {
       swipe: true,
       adaptiveHeight: true,
       responsive: [
-
         {
-            breakpoint: 1200,
+            breakpoint: 1439,
             settings: {
-                arrows: false
-            }
-        },
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            swipe: true }
+      },
+        {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            swipe: true }
+      },
         {
             breakpoint: 767,
             settings: {
@@ -174,16 +187,8 @@ $(document).ready(function(e) {
             autoplaySpeed: 2000,
             swipe: true }
       },
-     {
-        breakpoint: 400,
-            settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            swipe: true }
-      },] });
+    ]
+});
 
     function slideanimate(elements) {
       var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';

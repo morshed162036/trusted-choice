@@ -11,7 +11,7 @@
 
 
 <!-- Company Profile start -->
-<section class="company_profile py-4 cserve " style="background-color: #A6CE38;">
+<section class="company_profile py-4 cserve " style="background-color: #b2d235;">
     <div class="container">
         <div class="row">
         <div class="col-lg-2"> </div>
@@ -190,7 +190,7 @@
     </div>
 
 </section>
-
+<!-- basic Info start -->
 <section  style="background-color: #B9E5FA; ">
     <div class="container py-3">
     <div class="row">
@@ -222,7 +222,11 @@
 </div>
 </div>
 </section>
-<section style="background-color: #FFFBD5;">
+
+<!-- basic info end -->
+
+<!-- buyer list start -->
+<section style="background-color: #fffdbc;">
 <div class="container py-3">
 <div class="row">
     <div class="col-lg-2"> </div>
@@ -242,31 +246,31 @@
       <th class="last" scope="row">01</th>
       <td>VELILLA</td>
       <td>SLC</td>
-      <td>SPAIN </td>
+      <td class="text-center">SPAIN <span class="flag"> <img height= 50px; width= 50px; src="{{asset('frontend/images/flag/spain.png')}}"></span></td>
     </tr>
     <tr>
       <th class="last" scope="row">02</th>
-      <td>BLUE TECH</td>
+      <td>BLUE TECH </td>
       <td>Damarc SRL</td>
-      <td>ITALY</td>
+      <td class="text-center">ITALY<span class="flag"> <img height= 50px; width= 50px; src="{{asset('frontend/images/flag/italy.png')}}"></span></td>
     </tr>
     <tr>
       <th class="last" scope="row">03</th>
       <td>CARRY</td>
       <td>Fast Sourching</td>
-      <td>POLAND</td>
+      <td class="text-center">POLAND<span class="flag"> <img height= 50px; width= 50px; src="{{asset('frontend/images/flag/poland.png')}}"></span></td>
     </tr>
     <tr>
       <th class="last" scope="row">04</th>
       <td>STUDIO 84</td>
       <td>SR Fashion</td>
-      <td>U.S.A</td>
+      <td class="text-center">U.S.A<span class="flag"> <img height= 50px; width= 50px; src="{{asset('frontend/images/flag/america.png')}}"></span></td>
     </tr>
     <tr>
       <th class="last" scope="row">05</th>
       <td>LPP</td>
       <td>STL</td>
-      <td>POLAND</td>
+      <td class="text-center">POLAND<span class="flag"> <img height= 50px; width= 50px; src="{{asset('frontend/images/flag/poland.png')}}"></span></td>
     </tr>
   </tbody>
 </table>
@@ -274,21 +278,13 @@
 <div class="col-lg-2"> </div>
 </div>
 </div>
-
 </section>
+
+<!-- buyer list end -->
 
  <section style="background-color: #FAF9F6;">
  <div class="container py-3">
  <h4 style="text-align: center"> <span class="basicinfobutton" >STAFF </span> </h4>
-        <!-- <div class="row">
-            <h2 class="text-center my-5">WORKING ENVIRONMENT </h2>
-            <div class="col-8">
-                <p> <i class="fa-solid fa-caret-right"></i> NO CHILD LABOR <span> (All employees are above 18 years of age)    </span>   </p>
-                <p> <i class="fa-solid fa-caret-right"></i> FIRE PROTECTION <span> (Alarm System Fire Protection are all unit) </span>   </p>
-                <p> <i class="fa-solid fa-caret-right"></i> MEDICAL FACILITIES <span>(Imergency Tritment and first aid Box for all unit) </span>  </p>
-
-            </div>
-        </div> -->
         <div class="row">
 
  <!-- table start -->
@@ -443,9 +439,6 @@
                         <a href="#"> <img class="img-fluid"
                                 src="{{ asset('frontend/images/document/Trade Licence 1.jpg')}}" alt="image"></a>
                     </div>
-                    <div class="title py-3">
-                        <h4>First Trade License</h4>
-                    </div>
                 </div>
             </div>
         <div class="col-lg-3 col-md-3 col-sm-12 my-4">
@@ -455,9 +448,6 @@
                     <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/document/Trade Licence 2.jpg')}}"
                             alt="image"></a>
                 </div>
-                <div class="title py-3">
-                    <h4>Running Trade License</h4>
-                </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 my-4">
@@ -465,9 +455,6 @@
                 <div class="featured-thumbnail">
                     <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/document/TIN.jpg')}}"
                             alt="image"></a>
-                </div>
-                <div class="title py-3">
-                    <h4>Tin Certificate</h4>
                 </div>
             </div>
         </div>
@@ -477,16 +464,13 @@
                     <a href="#"> <img class="img-fluid" src="{{ asset('frontend/images/document/BIN_TrustedChoice.jpg')}}"
                             alt="image"></a>
                 </div>
-                <div class="title py-3">
-                    <h4>BIN Certificate</h4>
-                </div>
             </div>
         </div>
     </div>
     </div>
 </section>
 
-<section style="background-color: #A6CE38;">
+<section style="background-color: #b2d235;">
     <div class="container py-5">
         <div class="row">
         <h4 class="m-auto"><span class="basicinfobutton">Below is a list of factories we have worked with since 2010</span>  </h4>
@@ -505,112 +489,114 @@
     <tr>
       <th scope="row">1</th>
       <td>Tosy Knit Fabric.</td>
-      <th scope="row">2</th>
+      <th scope="row">15</th>
+      <td>Kimberly</td>
+      <th scope="row">29</th>
+      <td>Etc Garments</td>
+      
+    </tr>
+    <tr>
+    <th scope="row">2</th>
       <td>Excom Fashions Ltd.</td>
-      <th scope="row">3</th>
+      <th scope="row">16</th>
+      <td>Tejgaon Textile Ltd.</td>
+      <th scope="row">30</th>
+      <td> Glory Fashion</td>
+    </tr>
+    <tr>
+    <th scope="row">3</th>
       <td>Taher Apparels Ltd.</td>
+      <th scope="row">17</th>
+      <td>Nextgen Style Ltd. </td>
+      <th scope="row">31</th>
+      <td>Garib & Garib Fashion.</td>
     </tr>
     <tr>
       <th scope="row">4</th>
-      <td>Moonlux Knit Garments Ltd. </td>
+      <td>Moonlux Knit Garments Ltd </td>
+      <th scope="row">18</th>
+      <td> Nila Fashion. </td>
+      <th scope="row">32</th>
+      <td>Bandu Fashion</td>
+    </tr>
+    <tr>
       <th scope="row">5</th>
-      <td>Safa Fashion Wear Ltd.</td>
+      <td>Safa Fashion Wear LTD</td>
+      <th scope="row">19</th>
+      <td>Quattro Fashion Ltd. </td>
+      <th scope="row">33</th>
+      <td> AKH Fashions Ltd. </td>
+    </tr>
+    <tr>
       <th scope="row">6</th>
-      <td>Kentucky Knit Composite Ltd.</td>
+      <td>Kentucky Knit Composite Ltd</td>
+      <th scope="row">20</th>
+      <td> Atlantic Garments Ltd. </td>
+      <th scope="row">34</th>
+      <td> Impress Fashion Ltd. </td>
     </tr>
     <tr>
       <th scope="row">7</th>
-      <td>Ocean Sweater Ind. (Pvt.) Ltd. </td>
-      <th scope="row">8</th>
-      <td>Euro Knit Wear Ltd. </td>
-      <th scope="row">9</th>
-      <td>Gold Star Fashion.</td>
-    </tr>
-    <tr>
-      <th scope="row">10</th>
-      <td>Reefan Sweater Cottage. </td>
-      <th scope="row">11</th>
-      <td> Zee Fashion. </td>
-      <th scope="row">12</th>
-      <td> Multitech Apparels Ltd. </td>
-    </tr>
-    <tr>
-      <th scope="row">13</th>
-      <td>TMS Fashion Ltd.  </td>
-      <th scope="row">14</th>
-      <td>Green Vally Ltd. </td>
-      <th scope="row">15</th>
-      <td> Centex Fashion Ltd. </td>
-    </tr>
-    <tr>
-      <th scope="row">16</th>
-      <td> Kimberly. </td>
-      <th scope="row">17</th>
-      <td> Tejgaon Textile Ltd. </td>
-      <th scope="row">18</th>
-      <td> Nextgen Style Ltd. </td>
-    </tr>
-    <tr>
-      <th scope="row">19</th>
-      <td> Nila Fashion. </td>
-      <th scope="row">20</th>
-      <td> Quattro Fashion Ltd. </td>
+      <td> Ocean Sweater Ind. (pvt.) LTd </td>
       <th scope="row">21</th>
-      <td> Atlantic Garments Ltd. </td>
-    </tr>
-    <tr>
-      <th scope="row">22</th>
       <td> Wega Apparels Ltd. </td>
-      <th scope="row">23</th>
-      <td>Bangla Poshak Ltd. </td>
-      <th scope="row">24</th>
-      <td> Florence Fabric. </td>
-    </tr>
-    <tr>
-      <th scope="row">25</th>
-      <td> Amir Sweater Ltd. </td>
-      <th scope="row">26</th>
-      <td> Index Apparels Ltd. </td>
-      <th scope="row">27</th>
-      <td> Capella Knit Ltd. </td>
-    </tr>
-    <tr>
-        <th scope="row">28</th>
-        <td> Pacific Fashion Ltd. </td>
-        <th scope="row">29</th>
-        <td> Intraco Sweater Ltd. </td>
-        <th scope="row">30</th>
-        <td> ETC Garments. </td>
-    </tr>
-    <tr>
-      <th scope="row">31</th>
-      <td> Glory Fashion. </td>
-      <th scope="row">32</th>
-      <td> Garib & Garib Fashion. </td>
-      <th scope="row">33</th>
-      <td> Bandu Fashion. </td>
-    </tr>
-    <tr>
-      <th scope="row">34</th>
-      <td> AKH Fashions Ltd. </td>
       <th scope="row">35</th>
-      <td> Impress Fashion Ltd. </td>
-      <th scope="row">36</th>
       <td> Sports Ware Ltd. </td>
     </tr>
     <tr>
-      <th scope="row">37</th>
-      <td> Alim Knit Ware Ltd. </td>
-      <th scope="row">38</th>
-      <td> New Wave Apparels. </td>
-      <th scope="row">39</th>
-      <td> Donglian Fashion (BD) Ltd. </td>
+      <th scope="row">8</th>
+      <td>Euro Knit Wear Ltd.</td>
+      <th scope="row">22</th>
+      <td>Bangla Poshak Ltd. </td>
+      <th scope="row">36</th>
+      <td> Alim Knit Ware Ltd </td>
     </tr>
     <tr>
-      <th scope="row"> 40</th>
-      <td> Spotfame Apparels Ltd. </td>
+      <th scope="row">9</th>
+      <td> Gold Star Fashion </td>
+      <th scope="row">23</th>
+      <td> Florence Fabric </td>
+      <th scope="row">37</th>
+      <td>New Wave4 Apparels. </td>
+    </tr>
+    <tr>
+        <th scope="row">10</th>
+        <td>Reefan Sweater Cottage.</td>
+        <th scope="row">24</th>
+        <td> Amir Sweater Ltd. </td>
+        <th scope="row">38</th>
+        <td>Donglian Fashionb (BD) Ltd.</td>
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td> Multitech Appearles Ltd </td>
+      <th scope="row">25</th>
+      <td> Index Apparels Ltd </td>
+      <th scope="row">39</th>
+      <td>Spotfame Apparels Ltd.</td>
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <td> TMS Fashion Ltd. </td>
+      <th scope="row">26</th>
+      <td> Capella Knit Ltd. </td>
+      <th scope="row">40</th>
+      <td> Comfort Apparels Ltd. </td>
+    </tr>
+    <tr>
+      <th scope="row">13</th>
+      <td> Green Vally Ltd. </td>
+      <th scope="row">27</th>
+      <td> Pacific Fashion Ltd. </td>
       <th scope="row">41</th>
-      <td>Comfort Apparels Ltd. </td>
+      <td>Zee Fashion.</td>
+    </tr>
+    <tr>
+      <th scope="row"> 14</th>
+      <td> Centex Fashion Ltd. </td>
+      <th scope="row">28</th>
+      <td>Intraco Sweater Ltd. </td>
+      <th scope="row">42</th>
     </tr>
   </tbody>
 </table>

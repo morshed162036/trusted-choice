@@ -123,7 +123,8 @@ class FrontendController extends Controller
 
     public function contact()
     {
-        return view('frontend.contactPage');
+        $settings = Settings::get()->all();
+        return view('frontend.contactPage', compact('settings'));
     }
 
     public function contactStore(Request $request)

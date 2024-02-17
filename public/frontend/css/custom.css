@@ -213,6 +213,7 @@ i.ttm-textcolor-skincolor.fa.fa-map-marker {
     ul.widget_contact_wrapper li {
         margin: 12px !important;
     }
+
 }
 
 .highlight {
@@ -293,3 +294,17 @@ form .text-input input, textarea {
 #border-color tr td{
     border: 1px solid black;
 }
+
+
+/* buyer list start */
+
+.flag{
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  .flag{
+    margin: 0px -10px;
+}
+}
+/* buyer list end */

@@ -15,7 +15,8 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+        $contacts = Contact::where('type', 'user_contact')->get();
+        return view('backend.contact.index', compact('contacts'));
     }
 
     /**
@@ -25,7 +26,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
+       
     }
 
     /**
@@ -81,6 +82,9 @@ class ContactController extends Controller
      */
     public function destroy(Contact $contact)
     {
-        //
+        $contact = Contact::findOrFail($contact->id);
+        $contact->delete();
+        return redirect()->back()->with('success','Contact Delete Successfully');
     }
+    
 }

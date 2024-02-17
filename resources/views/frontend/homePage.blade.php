@@ -22,7 +22,7 @@
 <!--cta-section-->
 <section class="ttm-row cta-section ttm-bgimage-yes bg-img3 ttm-bg ttm-bgcolor-darkgrey clearfix"
     style="background: url({{ asset('frontend/images/bg-image/row-bgimage-3.jpg') }})">
-    <div class="ttm-row-wrapper-bg-layer ttm-bg-layer" style="background: #A6CE38"></div>
+    <div class="ttm-row-wrapper-bg-layer ttm-bg-layer" style="background: #b2d235;"></div>
     <div class="container">
         <!-- row -->
         <div class="row">

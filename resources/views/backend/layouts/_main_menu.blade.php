@@ -119,6 +119,12 @@
                     </li>
                 </ul>
             </li>
+            <li class=" nav-item"><a href="#"><i class="bx bx-lock"></i><span class="menu-title" data-i18n="Menu Levels">Contact List</span></a>
+                <ul class="menu-content">
+                    <li class="@yield('roleCreate')"><a href="{{ route('contact.index') }}"><i class="bx bx-right-arrow-alt"></i><span class="menu-item" data-i18n="Second Level">All Contact</span></a>
+                    </li>
+                </ul>
+            </li>
             <li class=" nav-item"><a href="#"><i class="bx bx-user-plus"></i><span class="menu-title" data-i18n="Menu Levels">Users</span></a>
                 <ul class="menu-content">
 

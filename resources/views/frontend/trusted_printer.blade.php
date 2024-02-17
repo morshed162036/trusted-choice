@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Trusted Printers" />
-    <meta name="description" content="Trusted Printers" />
+    <meta name="keywords" content="F&F ACCESSORIES" />
+    <meta name="description" content="F&F ACCESSORIES" />
     <meta name="author" content="https://www.themetechmount.com/" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trusted Printers</title>
+    <title>F&F ACCESSORIES</title>
 
     <link rel="shortcut icon" href="{{asset('frontend')}}/images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="{{asset('frontend')}}/css/bootstrap.min.css" media="all" />

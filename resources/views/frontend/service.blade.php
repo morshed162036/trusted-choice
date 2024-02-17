@@ -96,36 +96,33 @@
                 <li><span class="ttm-list-li-content">Care Label</span></li>
                 <li><span class="ttm-list-li-content">Heat Transfer Label</span></li>
                 <li><span class="ttm-list-li-content">Poly Bag, Poly sticker</span></li>
-                <li><span class="ttm-list-li-content">Poly Bag, Poly sticker</span></li>
                 <li><span class="ttm-list-li-content">Cartoon, Cartoon sticker</span></li>
                 <li><span class="ttm-list-li-content">plastic clip</span></li>
+                <li><span class="ttm-list-li-content">collor Bone</span></li>
 
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-               <li><span class="ttm-list-li-content">collor Bone</span></li>
+              
                 <li><span class="ttm-list-li-content">Button</span></li>
                 <li><span class="ttm-list-li-content">Brass Pin</span></li>
                 <li><span class="ttm-list-li-content">Tissue Paper</span></li>
                 <li><span class="ttm-list-li-content">HangTag String</span></li>
                 <li><span class="ttm-list-li-content">Metal Clip</span></li>
                 <li><span class="ttm-list-li-content">Metal Button</span></li>
-                <li><span class="ttm-list-li-content">Metal Button</span></li>
-
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-
                 <li><span class="ttm-list-li-content">Plastic Zipper puller</span></li>
                 <li><span class="ttm-list-li-content">Twill Tape</span></li>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <li><span class="ttm-list-li-content">Cotton tape</span></li>
                 <li><span class="ttm-list-li-content">Drawcord</span></li>
                 <li><span class="ttm-list-li-content">Drawstring</span></li>
                 <li><span class="ttm-list-li-content">Elastic</span></li>
                 <li><span class="ttm-list-li-content">Backboard</span></li>
                 <li><span class="ttm-list-li-content">paper neck Board</span></li>
+                <li><span class="ttm-list-li-content">Shank Button</span></li>
+                <li><span class="ttm-list-li-content">Shanp Button</span></li>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-               <li><span class="ttm-list-li-content">Shank Button</span></li>
-                <li><span class="ttm-list-li-content">Shanp Button</span></li>
                 <li><span class="ttm-list-li-content">Plastic Stopper</span></li>
                 <li><span class="ttm-list-li-content">plastic M clip</span></li>
                 <li><span class="ttm-list-li-content">Collar insert</span></li>
